@@ -1,0 +1,19 @@
+is_infinite_nat  % [ parameters ]
+		: THEORY
+
+  BEGIN
+
+  % ASSUMING
+   % assuming declarations
+  % ENDASSUMING
+
+  subset2nat(s : (is_infinite[nat]))(n : (s)) : nat = Card({m : nat | s(m) AND m <= n})
+
+
+
+  Infinite_subset_nat: CONJECTURE
+  FORALL(s : (is_infinite[nat])):
+  EXISTS(g : [(s)->nat]):
+  bijective?(g)
+
+  END is_infinite_nat

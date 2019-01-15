@@ -1,0 +1,3491 @@
+(pvs0_computable
+ (nat2p_recursive_TCC1 0
+  (nat2p_recursive_TCC1-1 nil 3748612756
+   ("" (existence-tcc)
+    (("" (inst 1 "(lop1,lop2,false_val,(:vr:))")
+      (("" (prop)
+        (("1" (lemma "tuple2nat_assump") (("1" (propax) nil nil)) nil)
+         ("2" (grind) nil nil))
+        nil))
+      nil))
+    nil)
+   ((valid_index_rec const-decl "bool" pvs0_lang nil)
+    (length_singleton formula-decl nil more_list_props "structures/")
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (list type-decl nil list_adt nil)
+    (EvalOp1 type-eq-decl nil pvs0_expr nil)
+    (EvalOp2 type-eq-decl nil pvs0_expr nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil) nil nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (cons? adt-recognizer-decl "[list -> boolean]" list_adt nil)
+    (lPVS0Expr type-eq-decl nil pvs0_expr nil)
+    (PVS0 type-eq-decl nil pvs0_expr nil)
+    (partial_recursive? const-decl "bool" pvs0_computable nil)
+    (partial_recursive type-eq-decl nil pvs0_computable nil)
+    (lop1 formal-const-decl "list[[nat -> nat]]" pvs0_computable nil)
+    (lop2 formal-const-decl "list[[[nat, nat] -> nat]]" pvs0_computable
+     nil)
+    (false_val formal-const-decl "nat" pvs0_computable nil)
+    (cons adt-constructor-decl "[[T, list] -> (cons?)]" list_adt nil)
+    (vr? adt-recognizer-decl "[PVS0Expr -> boolean]" PVS0Expr_adt nil)
+    (vr adt-constructor-decl "(vr?)" PVS0Expr_adt nil)
+    (null? adt-recognizer-decl "[list -> boolean]" list_adt nil)
+    (null adt-constructor-decl "(null?)" list_adt nil)
+    (rec adt-constructor-decl "[[nat, PVS0Expr] -> (rec?)]"
+     PVS0Expr_adt nil)
+    (rec? adt-recognizer-decl "[PVS0Expr -> boolean]" PVS0Expr_adt nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (IMPLIES const-decl "[bool, bool -> bool]" booleans nil)
+    (tuple2nat const-decl "nat" tuple2nat "numbers/")
+    (nth def-decl "T" list_props nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (below type-eq-decl nil nat_types nil)
+    (length def-decl "nat" list_props nil)
+    (< const-decl "bool" reals nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (tuple2nat_assump formula-decl nil pvs0_computable nil))
+   nil))
+ (nat2PVS0_limit_TCC1 0
+  (nat2PVS0_limit_TCC1-1 nil 3755520043 ("" (grind) nil nil)
+   ((subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (valid_index const-decl "bool" pvs0_computable nil))
+   nil))
+ (nat2PVS0_limit_TCC2 0
+  (nat2PVS0_limit_TCC2-1 nil 3755520043 ("" (subtype-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    nil (int_minus_int_is_int application-judgement "int" integers nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil))
+   nil))
+ (nat2PVS0_limit_TCC3 0
+  (nat2PVS0_limit_TCC3-1 nil 3755520043 ("" (grind) nil nil)
+   (nil (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (int_minus_int_is_int application-judgement "int" integers nil))
+   nil))
+ (nat2PVS0_limit_TCC4 0
+  (nat2PVS0_limit_TCC4-1 nil 3755520043 ("" (subtype-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    nil (int_minus_int_is_int application-judgement "int" integers nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil))
+   nil))
+ (nat2PVS0_limit_TCC5 0
+  (nat2PVS0_limit_TCC5-1 nil 3755520043
+   ("" (grind)
+    (("" (typepred "floor((5 * x!1 / 5) / (1 + limit!1))")
+      (("" (case "5 * x!1 / 5 = x!1")
+        (("1" (replaces -1)
+          (("1" (case "n!1 = 1")
+            (("1" (grind) nil nil)
+             ("2" (lemma " both_sides_div_pos_lt1")
+              (("2" (inst -1 "1+limit!1" "0" "x!1")
+                (("2" (assert) nil nil)) nil))
+              nil))
+            nil))
+          nil)
+         ("2" (assert) nil nil))
+        nil))
+      nil))
+    nil)
+   ((* const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (floor const-decl "{i | i <= x & x < i + 1}" floor_ceil nil)
+    (+ const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (< const-decl "bool" reals nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (integer nonempty-type-from-decl nil integers nil)
+    (<= const-decl "bool" reals nil)
+    (TRUE const-decl "bool" booleans nil)
+    (both_sides_div_pos_lt1 formula-decl nil real_props nil)
+    (nnrat_div_posrat_is_nnrat application-judgement "nonneg_rat"
+     rationals nil)
+    (int_plus_int_is_int application-judgement "int" integers nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nonneg_real nonempty-type-eq-decl nil real_types nil)
+    (> const-decl "bool" reals nil)
+    (posreal nonempty-type-eq-decl nil real_types nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    nil)
+   nil))
+ (nat2PVS0_limit_TCC6 0
+  (nat2PVS0_limit_TCC6-1 nil 3755520043
+   ("" (termination-tcc)
+    (("" (typepred "floor((5 * x!1 / 5) / (1 + limit!1))")
+      (("" (replace -6 :dir rl)
+        (("" (case "((n!1 - 2) / 5) / (1 + limit!1) < n!1")
+          (("1" (assert) nil nil)
+           ("2"
+            (case "((n!1 - 2) / 5) / (1 + limit!1) <= ((n!1 - 2) / 5)")
+            (("1" (assert) nil nil)
+             ("2" (assert)
+              (("2" (lemma "both_sides_div_pos_lt2")
+                (("2" (inst -1 "1+limit!1" "1" "((n!1 - 2) / 5)")
+                  (("2" (assert) nil nil)) nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((* const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (floor const-decl "{i | i <= x & x < i + 1}" floor_ceil nil)
+    (+ const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (< const-decl "bool" reals nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (integer nonempty-type-from-decl nil integers nil)
+    (<= const-decl "bool" reals nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (int_plus_int_is_int application-judgement "int" integers nil)
+    (real_gt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (posreal nonempty-type-eq-decl nil real_types nil)
+    (> const-decl "bool" reals nil)
+    (nonneg_real nonempty-type-eq-decl nil real_types nil)
+    (both_sides_div_pos_lt2 formula-decl nil real_props nil)
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    nil)
+   nil))
+ (nat2PVS0_limit_TCC7 0
+  (nat2PVS0_limit_TCC7-1 nil 3755520043
+   ("" (skeep)
+    (("" (typepred "v(limit)(floor(((n - 2) / 5) / (limit + 1)))")
+      (("1" (expand "valid_index")
+        (("1" (expand "valid_index_rec")
+          (("1" (skeep)
+            (("1" (expand "subterm" -4)
+              (("1" (prop)
+                (("1" (decompose-equality)
+                  (("1" (typepred "rem(1 + limit)((n - 2) / 5)")
+                    (("1" (assert) nil nil)
+                     ("2" (hide-all-but (-5 1)) (("2" (grind) nil nil))
+                      nil))
+                    nil)
+                   ("2" (hide-all-but (-4 1)) (("2" (grind) nil nil))
+                    nil))
+                  nil)
+                 ("2" (inst?) (("2" (assert) nil nil)) nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil)
+       ("2" (rewrite "nat2PVS0_limit_TCC5") nil nil))
+      nil))
+    nil)
+   ((- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (floor const-decl "{i | i <= x & x < i + 1}" floor_ceil nil)
+    (+ const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (<= const-decl "bool" reals nil)
+    (integer nonempty-type-from-decl nil integers nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (< const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (IMPLIES const-decl "[bool, bool -> bool]" booleans nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (rec? adt-recognizer-decl "[PVS0Expr -> boolean]" PVS0Expr_adt nil)
+    (get_from_list adt-accessor-decl "[(rec?) -> nat]" PVS0Expr_adt
+     nil)
+    (rec adt-constructor-decl "[[nat, PVS0Expr] -> (rec?)]"
+     PVS0Expr_adt nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (> const-decl "bool" reals nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (mod nonempty-type-eq-decl nil euclidean_division nil)
+    (* const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (rem const-decl "{r: mod(b) | EXISTS q: x = b * q + r}"
+         modulo_arithmetic nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (op1? adt-recognizer-decl "[PVS0Expr -> boolean]" PVS0Expr_adt nil)
+    (get_arg shared-adt-accessor-decl
+     "[{x: PVS0Expr | op1?(x) OR rec?(x)} -> PVS0Expr]" PVS0Expr_adt
+     nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    nil (nat2PVS0_limit_TCC5 subtype-tcc nil pvs0_computable nil)
+    (odd_plus_odd_is_even application-judgement "even_int" integers
+     nil)
+    (even_minus_odd_is_odd application-judgement "odd_int" integers
+     nil)
+    (int_plus_int_is_int application-judgement "int" integers nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil))
+   nil))
+ (nat2PVS0_limit_TCC8 0
+  (nat2PVS0_limit_TCC8-1 nil 3755520043 ("" (subtype-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    nil (int_minus_int_is_int application-judgement "int" integers nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil))
+   nil))
+ (nat2PVS0_limit_TCC9 0
+  (nat2PVS0_limit_TCC9-1 nil 3755520043
+   ("" (grind)
+    (("" (lemma "nat2tuple_first")
+      (("" (inst?) (("" (grind) nil nil)) nil)) nil))
+    nil)
+   ((nat2tuple_first formula-decl nil tuple2nat "numbers/")
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (* const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    nil)
+   nil))
+ (nat2PVS0_limit_TCC10 0
+  (nat2PVS0_limit_TCC10-1 nil 3755520043
+   ("" (skeep)
+    (("" (typepred "v(limit)(nat2tuple((n - 3) / 5)`2)")
+      (("1" (expand "valid_index")
+        (("1" (expand "valid_index_rec")
+          (("1" (skeep)
+            (("1" (expand "subterm" -4)
+              (("1" (inst?) (("1" (assert) nil nil)) nil)) nil))
+            nil))
+          nil))
+        nil)
+       ("2" (rewrite "nat2PVS0_limit_TCC8") nil nil))
+      nil))
+    nil)
+   ((- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (nat2tuple def-decl "[nat, nat]" tuple2nat "numbers/")
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (< const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (nat2PVS0_limit_TCC8 subtype-tcc nil pvs0_computable nil))
+   nil))
+ (nat2PVS0_limit_TCC11 0
+  (nat2PVS0_limit_TCC11-1 nil 3755520043 ("" (subtype-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    nil (int_minus_int_is_int application-judgement "int" integers nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil))
+   nil))
+ (nat2PVS0_limit_TCC12 0
+  (nat2PVS0_limit_TCC12-1 nil 3755520043
+   ("" (skeep)
+    (("" (lemma "nat2tuple_first")
+      (("" (inst-cp -1 "(n - 4) / 5")
+        (("1" (inst -1 "nat2tuple((n - 4) / 5)`2")
+          (("1" (grind) nil nil)
+           ("2" (rewrite "nat2PVS0_limit_TCC11") nil nil))
+          nil)
+         ("2" (rewrite "nat2PVS0_limit_TCC11") nil nil))
+        nil))
+      nil))
+    nil)
+   ((nat2tuple_first formula-decl nil tuple2nat "numbers/")
+    (nat2tuple def-decl "[nat, nat]" tuple2nat "numbers/") nil
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nat2PVS0_limit_TCC11 subtype-tcc nil pvs0_computable nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil) nil
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   nil))
+ (nat2PVS0_limit_TCC13 0
+  (nat2PVS0_limit_TCC13-2 nil 3755606912
+   ("" (skeep)
+    (("" (lemma "nat2tuple_first")
+      (("" (inst-cp -1 "(n - 4) / 5")
+        (("1" (inst -1 "nat2tuple((n - 4) / 5)`2")
+          (("1" (grind) nil nil)
+           ("2" (rewrite "nat2PVS0_limit_TCC11") nil nil))
+          nil)
+         ("2" (rewrite "nat2PVS0_limit_TCC11") nil nil))
+        nil))
+      nil))
+    nil)
+   ((nat2tuple_first formula-decl nil tuple2nat "numbers/")
+    (nat2tuple def-decl "[nat, nat]" tuple2nat "numbers/") nil
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nat2PVS0_limit_TCC11 subtype-tcc nil pvs0_computable nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil) nil
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   nil)
+  (nat2PVS0_limit_TCC13-1 nil 3755520043 ("" (termination-tcc) nil nil)
+   nil nil))
+ (nat2PVS0_limit_TCC14 0
+  (nat2PVS0_limit_TCC14-1 nil 3755520043
+   ("" (skeep)
+    (("" (expand "valid_index" 5)
+      (("" (expand "valid_index_rec")
+        (("" (skeep)
+          (("" (expand "subterm")
+            (("" (prop)
+              (("1"
+                (typepred
+                 "v(limit)(nat2tuple(nat2tuple((n - 4) / 5)`2)`1)")
+                (("1" (expand "valid_index")
+                  (("1" (expand "valid_index_rec")
+                    (("1" (inst?) (("1" (assert) nil nil)) nil)) nil))
+                  nil)
+                 ("2" (rewrite "nat2PVS0_limit_TCC11") nil nil))
+                nil)
+               ("2"
+                (typepred
+                 "v(limit)(nat2tuple(nat2tuple((n - 4) / 5)`2)`2)")
+                (("1" (expand "valid_index")
+                  (("1" (expand "valid_index_rec")
+                    (("1" (inst?) (("1" (assert) nil nil)) nil)) nil))
+                  nil)
+                 ("2" (rewrite "nat2PVS0_limit_TCC11") nil nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((valid_index const-decl "bool" pvs0_computable nil)
+    (nat2PVS0_limit_TCC11 subtype-tcc nil pvs0_computable nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (< const-decl "bool" reals nil)
+    (nat2tuple def-decl "[nat, nat]" tuple2nat "numbers/")
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (int_minus_int_is_int application-judgement "int" integers nil))
+   nil))
+ (nat2PVS0_limit_TCC15 0
+  (nat2PVS0_limit_TCC15-1 nil 3755520043
+   ("" (skeep)
+    (("" (prop)
+      (("1" (case "divides(5,n)")
+        (("1" (expand "divides")
+          (("1" (skeep)
+            (("1" (replace -1)
+              (("1" (case "(5 * x - 5) / 5 = x - 1")
+                (("1" (assert) nil nil) ("2" (assert) nil nil)) nil))
+              nil))
+            nil))
+          nil)
+         ("2" (rewrite "rem_def2" :dir rl)
+          (("2" (rewrite "rem_def2" :dir rl)
+            (("2" (rewrite "rem_def2" :dir rl)
+              (("2" (rewrite "rem_def2" :dir rl)
+                (("2" (case "divides(5, n-0)")
+                  (("1" (assert) nil nil)
+                   ("2" (rewrite "rem_def2" :dir rl)
+                    (("2" (typepred "rem(5)(n)")
+                      (("2" (assert) nil nil)) nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil)
+       ("2" (case "n >= 5")
+        (("1" (grind) nil nil)
+         ("2" (rewrite "rem_def2" :dir rl)
+          (("2" (rewrite "rem_def2" :dir rl)
+            (("2" (rewrite "rem_def2" :dir rl)
+              (("2" (rewrite "rem_def2" :dir rl)
+                (("2" (typepred "rem(5)(n)") (("2" (grind) nil nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((rem_def2 formula-decl nil modulo_arithmetic nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (> const-decl "bool" reals nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (< const-decl "bool" reals nil)
+    (mod nonempty-type-eq-decl nil euclidean_division nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (+ const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (rem const-decl "{r: mod(b) | EXISTS q: x = b * q + r}"
+         modulo_arithmetic nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (* const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil) nil
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int_plus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   nil))
+ (nat2PVS0_limit_TCC16 0
+  (nat2PVS0_limit_TCC16-1 nil 3755520043
+   ("" (skeep)
+    (("" (lemma "nat2tuple_first")
+      (("" (inst?)
+        (("1" (assert) nil nil)
+         ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+        nil))
+      nil))
+    nil)
+   ((nat2tuple_first formula-decl nil tuple2nat "numbers/")
+    (nat2PVS0_limit_TCC15 subtype-tcc nil pvs0_computable nil)
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil) nil
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   nil))
+ (nat2PVS0_limit_TCC17 0
+  (nat2PVS0_limit_TCC17-1 nil 3755520043
+   ("" (skeep)
+    (("" (lemma "nat2tuple_first")
+      (("" (inst-cp -1 "(n - 5) / 5")
+        (("1" (inst -1 "nat2tuple((n - 5) / 5)`2")
+          (("1" (grind) nil nil)
+           ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+          nil)
+         ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+        nil))
+      nil))
+    nil)
+   ((nat2tuple_first formula-decl nil tuple2nat "numbers/")
+    (nat2tuple def-decl "[nat, nat]" tuple2nat "numbers/") nil
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nat2PVS0_limit_TCC15 subtype-tcc nil pvs0_computable nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil) nil
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   nil))
+ (nat2PVS0_limit_TCC18 0
+  (nat2PVS0_limit_TCC18-2 nil 3755610191
+   ("" (skeep)
+    (("" (lemma "nat2tuple_first")
+      (("" (inst-cp -1 "(n - 5) / 5")
+        (("1" (inst -1 "nat2tuple((n - 5) / 5)`2")
+          (("1" (grind) nil nil)
+           ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+          nil)
+         ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+        nil))
+      nil))
+    nil)
+   ((nat2tuple_first formula-decl nil tuple2nat "numbers/")
+    (nat2tuple def-decl "[nat, nat]" tuple2nat "numbers/") nil
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nat2PVS0_limit_TCC15 subtype-tcc nil pvs0_computable nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil) nil
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   nil)
+  (nat2PVS0_limit_TCC18-1 nil 3755520043 ("" (termination-tcc) nil nil)
+   nil nil))
+ (nat2PVS0_limit_TCC19 0
+  (nat2PVS0_limit_TCC19-1 nil 3755520043
+   ("" (skeep)
+    (("" (expand "valid_index")
+      (("" (expand "valid_index_rec")
+        (("" (skeep)
+          (("" (expand "subterm")
+            (("" (prop)
+              (("1" (typepred "v(limit)(nat2tuple((n - 5) / 5)`1)")
+                (("1" (expand "valid_index")
+                  (("1" (expand "valid_index_rec")
+                    (("1" (inst?) (("1" (assert) nil nil)) nil)) nil))
+                  nil)
+                 ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+                nil)
+               ("2"
+                (typepred
+                 " v(limit)(nat2tuple(nat2tuple((n - 5) / 5)`2)`1)")
+                (("1" (expand "valid_index")
+                  (("1" (expand "valid_index_rec")
+                    (("1" (inst?) (("1" (assert) nil nil)) nil)) nil))
+                  nil)
+                 ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+                nil)
+               ("3"
+                (typepred
+                 "v(limit)(nat2tuple(nat2tuple((n - 5) / 5)`2)`2)")
+                (("1" (expand "valid_index")
+                  (("1" (expand "valid_index_rec")
+                    (("1" (inst?) (("1" (assert) nil nil)) nil)) nil))
+                  nil)
+                 ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((valid_index const-decl "bool" pvs0_computable nil)
+    (nat2PVS0_limit_TCC15 subtype-tcc nil pvs0_computable nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (< const-decl "bool" reals nil)
+    (nat2tuple def-decl "[nat, nat]" tuple2nat "numbers/")
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (int_minus_int_is_int application-judgement "int" integers nil))
+   nil))
+ (PVS02nat_limit_TCC1 0
+  (PVS02nat_limit_TCC1-1 nil 3755520173
+   ("" (skeep)
+    (("" (typepred "expr")
+      (("" (replace -3)
+        (("" (expand "valid_index")
+          (("" (expand "valid_index_rec")
+            (("" (expand "subterm" -2)
+              (("" (skeep)
+                (("" (inst -2 "i" "expr!1") (("" (assert) nil nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((valid_index const-decl "bool" pvs0_computable nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil))
+   nil))
+ (PVS02nat_limit_TCC2 0
+  (PVS02nat_limit_TCC2-1 nil 3755520173 ("" (termination-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (<< adt-def-decl "(strict_well_founded?[PVS0Expr])" PVS0Expr_adt
+     nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil))
+   nil))
+ (PVS02nat_limit_TCC3 0
+  (PVS02nat_limit_TCC3-1 nil 3755520173
+   ("" (skeep)
+    (("" (typepred "expr")
+      (("" (replace -3)
+        (("" (expand "valid_index")
+          (("" (expand "valid_index_rec")
+            (("" (skeep)
+              (("" (inst?)
+                (("" (assert)
+                  (("" (expand "subterm") (("" (propax) nil nil)) nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((valid_index const-decl "bool" pvs0_computable nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil))
+   nil))
+ (PVS02nat_limit_TCC4 0
+  (PVS02nat_limit_TCC4-1 nil 3755520173 ("" (termination-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (<< adt-def-decl "(strict_well_founded?[PVS0Expr])" PVS0Expr_adt
+     nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil))
+   nil))
+ (PVS02nat_limit_TCC5 0
+  (PVS02nat_limit_TCC5-1 nil 3755520173
+   ("" (skeep)
+    (("" (typepred "expr")
+      (("" (replaces -3)
+        (("" (expand "valid_index")
+          (("" (expand "valid_index_rec")
+            (("" (skeep)
+              (("" (inst?)
+                (("" (expand "subterm" -2) (("" (assert) nil nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((valid_index const-decl "bool" pvs0_computable nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (TRUE const-decl "bool" booleans nil))
+   nil))
+ (PVS02nat_limit_TCC6 0
+  (PVS02nat_limit_TCC6-1 nil 3755520173 ("" (termination-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (<< adt-def-decl "(strict_well_founded?[PVS0Expr])" PVS0Expr_adt
+     nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil))
+   nil))
+ (PVS02nat_limit_TCC7 0
+  (PVS02nat_limit_TCC7-1 nil 3755520173
+   ("" (skeep)
+    (("" (typepred " expr")
+      (("" (expand "valid_index")
+        (("" (expand "valid_index_rec")
+          (("" (skeep)
+            (("" (inst?)
+              (("" (replace -3)
+                (("" (expand "subterm" -2) (("" (assert) nil nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((valid_index const-decl "bool" pvs0_computable nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil))
+   nil))
+ (PVS02nat_limit_TCC8 0
+  (PVS02nat_limit_TCC8-1 nil 3755520173 ("" (termination-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (<< adt-def-decl "(strict_well_founded?[PVS0Expr])" PVS0Expr_adt
+     nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil))
+   nil))
+ (PVS02nat_limit_TCC9 0
+  (PVS02nat_limit_TCC9-1 nil 3755520173
+   ("" (skeep)
+    (("" (typepred "expr")
+      (("" (expand "valid_index")
+        (("" (expand "valid_index_rec")
+          (("" (skeep)
+            (("" (inst?)
+              (("" (replace -3)
+                (("" (expand "subterm" -2) (("" (assert) nil nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((valid_index const-decl "bool" pvs0_computable nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil))
+   nil))
+ (PVS02nat_limit_TCC10 0
+  (PVS02nat_limit_TCC10-1 nil 3755520173 ("" (termination-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (<< adt-def-decl "(strict_well_founded?[PVS0Expr])" PVS0Expr_adt
+     nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil))
+   nil))
+ (PVS02nat_limit_TCC11 0
+  (PVS02nat_limit_TCC11-2 nil 3755611298
+   ("" (skeep)
+    (("" (typepred "expr")
+      (("" (expand "valid_index")
+        (("" (expand "valid_index_rec")
+          (("" (skeep)
+            (("" (inst?)
+              (("" (replace -3)
+                (("" (expand "subterm" -2) (("" (assert) nil nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((valid_index const-decl "bool" pvs0_computable nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil))
+   nil)
+  (PVS02nat_limit_TCC11-1 nil 3755520173 ("" (subtype-tcc) nil nil) nil
+   nil))
+ (PVS02nat_limit_TCC12 0
+  (PVS02nat_limit_TCC12-1 nil 3755520173 ("" (termination-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (<< adt-def-decl "(strict_well_founded?[PVS0Expr])" PVS0Expr_adt
+     nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil))
+   nil))
+ (PVS02nat_limit_TCC13 0
+  (PVS02nat_limit_TCC13-2 nil 3755611350
+   ("" (skeep)
+    (("" (typepred "expr")
+      (("" (expand "valid_index")
+        (("" (expand "valid_index_rec")
+          (("" (skeep)
+            (("" (inst?)
+              (("" (replace -3)
+                (("" (expand "subterm" -2) (("" (assert) nil nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((valid_index const-decl "bool" pvs0_computable nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil))
+   nil)
+  (PVS02nat_limit_TCC13-1 nil 3755520173 ("" (subtype-tcc) nil nil) nil
+   nil))
+ (PVS02nat_limit_TCC14 0
+  (PVS02nat_limit_TCC14-1 nil 3755520173 ("" (termination-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (<< adt-def-decl "(strict_well_founded?[PVS0Expr])" PVS0Expr_adt
+     nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil))
+   nil))
+ (listPVS02nat_limit_TCC1 0
+  (listPVS02nat_limit_TCC1-1 nil 3755613115
+   (""
+    (case "FORALL (l1 : list[PVS0Expr[nat]] , l: (cons?[PVS0Expr[nat]])
+                         | FORALL (i: below[length[PVS0Expr[nat]](l1)]):
+                             valid_index_rec[nat]
+                                 (nth[PVS0Expr[nat]](l1, i),
+                                  length[PVS0Expr[nat]](l))):
+               every[PVS0Expr[number]]
+                   (LAMBDA (x1: PVS0Expr[number]):
+                      every[number]
+                          (LAMBDA (x: number):
+                                  number_field_pred(x) AND real_pred(x)
+                              AND rational_pred(x) AND integer_pred(x) AND x >= 0)
+                          (x1)
+                       AND valid_index(length[PVS0Expr[nat]](l) - 1)(x1))
+                   (l1)")
+    (("1" (skeep)
+      (("1" (inst?)
+        (("1" (typepred "l")
+          (("1" (expand "limited") (("1" (propax) nil nil)) nil)) nil))
+        nil))
+      nil)
+     ("2" (hide 2)
+      (("2" (measure-induct+ "length(l1)" "l1")
+        (("1" (skeep)
+          (("1" (expand "every" 1 1)
+            (("1" (assert)
+              (("1" (lift-if)
+                (("1" (prop)
+                  (("1" (typepred "car(x!1)") (("1" (propax) nil nil))
+                    nil)
+                   ("2" (typepred "l")
+                    (("2" (inst -3 "0")
+                      (("1" (expand "nth" -3)
+                        (("1" (expand "valid_index" 1)
+                          (("1" (propax) nil nil)) nil))
+                        nil)
+                       ("2" (hide-all-but (1 3))
+                        (("2" (grind) nil nil)) nil))
+                      nil))
+                    nil)
+                   ("3" (inst -1 "cdr(x!1)")
+                    (("3" (inst -1 "l")
+                      (("1" (expand "length" -1 2)
+                        (("1" (assert) nil nil)) nil)
+                       ("2" (typepred "l")
+                        (("2" (skeep)
+                          (("2" (inst -3 "i+1")
+                            (("1" (expand "nth" -3)
+                              (("1" (propax) nil nil)) nil)
+                             ("2" (typepred "i")
+                              (("2" (grind) nil nil)) nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil)
+         ("2" (grind) nil nil) ("3" (grind) nil nil))
+        nil))
+      nil)
+     ("3" (grind) nil nil))
+    nil)
+   ((real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (car adt-accessor-decl "[(cons?) -> T]" list_adt nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    nil
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    nil (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    nil
+    (+ const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (cdr adt-accessor-decl "[(cons?) -> list]" list_adt nil)
+    (wf_nat formula-decl nil naturalnumbers nil)
+    (measure_induction formula-decl nil measure_induction nil)
+    (naturalnumber type-eq-decl nil naturalnumbers nil)
+    (well_founded? const-decl "bool" orders nil)
+    (pred type-eq-decl nil defined_types nil)
+    (NOT const-decl "[bool -> bool]" booleans nil) nil
+    (limited const-decl "bool" pvs0_computable nil)
+    (IMPLIES const-decl "[bool, bool -> bool]" booleans nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (number nonempty-type-decl nil numbers nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (list type-decl nil list_adt nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (PRED type-eq-decl nil defined_types nil) nil nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (cons? adt-recognizer-decl "[list -> boolean]" list_adt nil)
+    (< const-decl "bool" reals nil)
+    (length def-decl "nat" list_props nil)
+    (below type-eq-decl nil nat_types nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (nth def-decl "T" list_props nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields
+       nil))
+   nil))
+ (listPVS02nat_limit_TCC2 0
+  (listPVS02nat_limit_TCC2-1 nil 3755613115 ("" (grind) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (list type-decl nil list_adt nil) nil nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (cons? adt-recognizer-decl "[list -> boolean]" list_adt nil)
+    (limited const-decl "bool" pvs0_computable nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (length def-decl "nat" list_props nil))
+   nil))
+ (listPVS02nat_limit_TCC3 0
+  (listPVS02nat_limit_TCC3-1 nil 3755613115 ("" (grind) nil nil)
+   ((subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (limited const-decl "bool" pvs0_computable nil)
+    (cons? adt-recognizer-decl "[list -> boolean]" list_adt nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil nil
+    (list type-decl nil list_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (nat_list_enum_inv const-decl "nat" nat_list_enum "numbers/")
+    (double_nat_enum_inv const-decl "nat" nat_list_enum "numbers/") nil
+    (length def-decl "nat" list_props nil)
+    (nnint_times_nnint_is_nnint application-judgement "nonneg_int"
+     integers nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (nnint_plus_nnint_is_nnint application-judgement "nonneg_int"
+     integers nil)
+    (even_times_int_is_even application-judgement "even_int" integers
+     nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (posrat_div_posrat_is_posrat application-judgement "posrat"
+     rationals nil)
+    (rat_minus_rat_is_rat application-judgement "rat" rationals nil))
+   nil))
+ (nat2listPVS0_limit_TCC1 0
+  (nat2listPVS0_limit_TCC1-1 nil 3755613115
+   ("" (skeep)
+    (("" (expand "nat_list_enum")
+      (("" (expand "nat_pair_to_list_length")
+        (("" (lift-if)
+          (("" (prop)
+            (("1" (expand "length")
+              (("1" (expand "length") (("1" (assert) nil nil)) nil))
+              nil)
+             ("2" (expand "length") (("2" (assert) nil nil)) nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((nat_list_enum const-decl "list[nat]" nat_list_enum "numbers/")
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (length def-decl "nat" list_props nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nat_pair_to_list_length def-decl
+     "{l: list[nat] | length(l) = n + 1}" nat_list_enum "numbers/"))
+   nil))
+ (nat2listPVS0_limit_TCC2 0
+  (nat2listPVS0_limit_TCC2-1 nil 3755869075 ("" (subtype-tcc) nil nil)
+   ((rat_minus_rat_is_rat application-judgement "rat" rationals nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (nat_list_enum const-decl "list[nat]" nat_list_enum "numbers/")
+    (double_nat_enum const-decl "[nat, nat]" nat_list_enum "numbers/")
+    (nnint_times_nnint_is_nnint application-judgement "nonneg_int"
+     integers nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (nnint_plus_nnint_is_nnint application-judgement "nonneg_int"
+     integers nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (nnrat_div_posrat_is_nnrat application-judgement "nonneg_rat"
+     rationals nil)
+    (nnrat_plus_nnrat_is_nnrat application-judgement "nonneg_rat"
+     rationals nil))
+   nil))
+ (nat2listPVS0_limit_TCC3 0
+  (nat2listPVS0_limit_TCC3-1 nil 3755869075
+   ("" (skeep)
+    (("" (prop)
+      (("1" (expand "nat_list_enum" 1 2)
+        (("1" (expand "nat_pair_to_list_length")
+          (("1" (lift-if)
+            (("1" (prop)
+              (("1" (expand "map") (("1" (propax) nil nil)) nil)
+               ("2" (expand "map") (("2" (propax) nil nil)) nil))
+              nil))
+            nil))
+          nil))
+        nil)
+       ("2" (expand "limited")
+        (("2" (skeep)
+          (("2"
+            (lemma "map_nth_rw [nat,
+                               (valid_index(length(nat_list_enum(n + 1))
+                                            -
+                                            1))]")
+            (("2"
+              (inst -1 "nat2PVS0_limit(length[nat]
+                                              (nat_list_enum(1 + n))
+                                              -
+                                              1)"
+               "nat_list_enum(1 + n)" "i")
+              (("1"
+                (use "subtype_nth[PVS0Expr[nat],(valid_index(length(nat_list_enum(n + 1))
+                                            -
+                                            1))]")
+                (("1" (replace -1)
+                  (("1" (replace -2)
+                    (("1"
+                      (typepred
+                       "nat2PVS0_limit(length[nat](nat_list_enum(1 + n)) - 1)
+                                    (nth(nat_list_enum(1 + n), i))")
+                      (("1" (expand "valid_index")
+                        (("1" (hide-all-but (-2 1))
+                          (("1"
+                            (use "subtype_length[PVS0Expr[nat], (valid_index(length(nat_list_enum(n + 1))
+                                               -
+                                               1))]")
+                            (("1" (replace -1)
+                              (("1"
+                                (use
+                                 "map_length[nat,(valid_index(length(nat_list_enum(n + 1)) - 1))]")
+                                (("1"
+                                  (replace -1)
+                                  (("1" (propax) nil nil))
+                                  nil)
+                                 ("2"
+                                  (hide-all-but 1)
+                                  (("2"
+                                    (expand "nat_list_enum")
+                                    (("2"
+                                      (expand
+                                       "nat_pair_to_list_length")
+                                      (("2"
+                                        (lift-if)
+                                        (("2"
+                                          (prop)
+                                          (("1"
+                                            (expand "length")
+                                            (("1"
+                                              (expand "length")
+                                              (("1" (assert) nil nil))
+                                              nil))
+                                            nil)
+                                           ("2"
+                                            (expand "length")
+                                            (("2" (assert) nil nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil)
+                             ("2" (rewrite "every_forall")
+                              (("1"
+                                (skeep)
+                                (("1"
+                                  (prop)
+                                  (("1"
+                                    (typepred
+                                     "nth(map
+                   [nat,
+                    (valid_index(length[nat](nat_list_enum(n + 1)) - 1))]
+                   (nat2PVS0_limit(length[nat](nat_list_enum(1 + n)) - 1))
+                   (nat_list_enum(1 + n)),
+               n_1)")
+                                    (("1"
+                                      (use
+                                       "subtype_nth[PVS0Expr[number],PVS0Expr[nat]]")
+                                      (("1"
+                                        (assert)
+                                        (("1"
+                                          (replace -1)
+                                          (("1"
+                                            (hide-all-but (-2 1))
+                                            (("1"
+                                              (use
+                                               "subtype_nth[PVS0Expr[nat],(valid_index(length[nat](nat_list_enum(n + 1)) - 1))]")
+                                              (("1"
+                                                (assert)
+                                                (("1"
+                                                  (replace -1)
+                                                  (("1"
+                                                    (propax)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil)
+                                               ("2"
+                                                (hide-all-but 1)
+                                                (("2"
+                                                  (expand
+                                                   "nat_list_enum")
+                                                  (("2"
+                                                    (expand
+                                                     "nat_pair_to_list_length")
+                                                    (("2"
+                                                      (lift-if)
+                                                      (("2"
+                                                        (prop)
+                                                        (("1"
+                                                          (expand
+                                                           "length")
+                                                          (("1"
+                                                            (expand
+                                                             "length")
+                                                            (("1"
+                                                              (assert)
+                                                              nil
+                                                              nil))
+                                                            nil))
+                                                          nil)
+                                                         ("2"
+                                                          (expand
+                                                           "length")
+                                                          (("2"
+                                                            (assert)
+                                                            nil
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil)
+                                               ("3"
+                                                (hide-all-but 1)
+                                                (("3"
+                                                  (expand
+                                                   "nat_list_enum")
+                                                  (("3"
+                                                    (expand
+                                                     "nat_pair_to_list_length")
+                                                    (("3"
+                                                      (lift-if)
+                                                      (("3"
+                                                        (prop)
+                                                        (("1"
+                                                          (expand
+                                                           "length")
+                                                          (("1"
+                                                            (assert)
+                                                            nil
+                                                            nil))
+                                                          nil)
+                                                         ("2"
+                                                          (expand
+                                                           "length")
+                                                          (("2"
+                                                            (assert)
+                                                            nil
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil)
+                                       ("2"
+                                        (hide-all-but 1)
+                                        (("2"
+                                          (typepred "n_1")
+                                          (("2"
+                                            (use
+                                             "subtype_length[PVS0Expr[number],PVS0Expr[nat]]")
+                                            (("1" (assert) nil nil)
+                                             ("2"
+                                              (hide-all-but 1)
+                                              (("2"
+                                                (expand
+                                                 "nat_list_enum")
+                                                (("2"
+                                                  (expand
+                                                   "nat_pair_to_list_length")
+                                                  (("2"
+                                                    (lift-if)
+                                                    (("2"
+                                                      (prop)
+                                                      (("1"
+                                                        (expand
+                                                         "length")
+                                                        (("1"
+                                                          (expand
+                                                           "length")
+                                                          (("1"
+                                                            (assert)
+                                                            nil
+                                                            nil))
+                                                          nil))
+                                                        nil)
+                                                       ("2"
+                                                        (expand
+                                                         "length")
+                                                        (("2"
+                                                          (assert)
+                                                          nil
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil)
+                                       ("3"
+                                        (hide-all-but 1)
+                                        (("3"
+                                          (expand "nat_list_enum")
+                                          (("3"
+                                            (expand
+                                             "nat_pair_to_list_length")
+                                            (("3"
+                                              (lift-if)
+                                              (("3"
+                                                (prop)
+                                                (("1"
+                                                  (expand "length")
+                                                  (("1"
+                                                    (assert)
+                                                    nil
+                                                    nil))
+                                                  nil)
+                                                 ("2"
+                                                  (expand "length")
+                                                  (("2"
+                                                    (assert)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil)
+                                     ("2"
+                                      (hide-all-but 1)
+                                      (("2"
+                                        (typepred "n_1")
+                                        (("2"
+                                          (use
+                                           "subtype_length[PVS0Expr[number],(valid_index(length[nat](nat_list_enum(n + 1)) - 1))]")
+                                          (("1"
+                                            (assert)
+                                            (("1"
+                                              (replace -1)
+                                              (("1"
+                                                (hide -1)
+                                                (("1"
+                                                  (replace -1)
+                                                  (("1"
+                                                    (propax)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil)
+                                           ("2"
+                                            (hide-all-but 1)
+                                            (("2"
+                                              (expand "nat_list_enum")
+                                              (("2"
+                                                (expand
+                                                 "nat_pair_to_list_length")
+                                                (("2"
+                                                  (lift-if)
+                                                  (("2"
+                                                    (prop)
+                                                    (("1"
+                                                      (expand "length")
+                                                      (("1"
+                                                        (assert)
+                                                        nil
+                                                        nil))
+                                                      nil)
+                                                     ("2"
+                                                      (expand "length")
+                                                      (("2"
+                                                        (assert)
+                                                        nil
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil)
+                                     ("3"
+                                      (hide-all-but 1)
+                                      (("3"
+                                        (expand "nat_list_enum")
+                                        (("3"
+                                          (expand
+                                           "nat_pair_to_list_length")
+                                          (("3"
+                                            (lift-if)
+                                            (("3"
+                                              (prop)
+                                              (("1"
+                                                (expand "length")
+                                                (("1"
+                                                  (assert)
+                                                  nil
+                                                  nil))
+                                                nil)
+                                               ("2"
+                                                (expand "length")
+                                                (("2"
+                                                  (assert)
+                                                  nil
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil)
+                                   ("2"
+                                    (hide-all-but 1)
+                                    (("2"
+                                      (use
+                                       "subtype_nth[PVS0Expr[number],(valid_index(length[nat](nat_list_enum(n + 1))
+                                        -
+                                        1))]")
+                                      (("1"
+                                        (replace -1)
+                                        (("1"
+                                          (use
+                                           "map_nth_rw[nat,(valid_index(length[nat](nat_list_enum(n + 1)) - 1))]")
+                                          (("1"
+                                            (replace -1)
+                                            (("1"
+                                              (typepred
+                                               "nat2PVS0_limit(length[nat](nat_list_enum(1 + n)) - 1)
+                                (nth(nat_list_enum(1 + n), n_1))")
+                                              (("1" (propax) nil nil))
+                                              nil))
+                                            nil)
+                                           ("2"
+                                            (hide-all-but 1)
+                                            (("2"
+                                              (typepred "n_1")
+                                              (("2"
+                                                (use
+                                                 "subtype_length[PVS0Expr[number],(valid_index(length[nat](nat_list_enum(n + 1)) - 1))]")
+                                                (("1"
+                                                  (replace -1)
+                                                  (("1"
+                                                    (use
+                                                     "map_length[nat,(valid_index(length[nat](nat_list_enum(n + 1)) - 1))]")
+                                                    (("1"
+                                                      (replace -1)
+                                                      (("1"
+                                                        (propax)
+                                                        nil
+                                                        nil))
+                                                      nil)
+                                                     ("2"
+                                                      (hide-all-but 1)
+                                                      (("2"
+                                                        (expand
+                                                         "nat_list_enum")
+                                                        (("2"
+                                                          (expand
+                                                           "nat_pair_to_list_length")
+                                                          (("2"
+                                                            (lift-if)
+                                                            (("2"
+                                                              (prop)
+                                                              (("1"
+                                                                (expand
+                                                                 "length")
+                                                                (("1"
+                                                                  (assert)
+                                                                  nil
+                                                                  nil))
+                                                                nil)
+                                                               ("2"
+                                                                (expand
+                                                                 "length")
+                                                                (("2"
+                                                                  (assert)
+                                                                  nil
+                                                                  nil))
+                                                                nil))
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil)
+                                                 ("2"
+                                                  (hide-all-but 1)
+                                                  (("2"
+                                                    (expand
+                                                     "nat_list_enum")
+                                                    (("2"
+                                                      (expand
+                                                       "nat_pair_to_list_length")
+                                                      (("2"
+                                                        (lift-if)
+                                                        (("2"
+                                                          (prop)
+                                                          (("1"
+                                                            (expand
+                                                             "length")
+                                                            (("1"
+                                                              (assert)
+                                                              nil
+                                                              nil))
+                                                            nil)
+                                                           ("2"
+                                                            (expand
+                                                             "length")
+                                                            (("2"
+                                                              (assert)
+                                                              nil
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil)
+                                           ("3"
+                                            (hide-all-but 1)
+                                            (("3"
+                                              (expand "nat_list_enum")
+                                              (("3"
+                                                (expand
+                                                 "nat_pair_to_list_length")
+                                                (("3"
+                                                  (lift-if)
+                                                  (("3"
+                                                    (prop)
+                                                    (("1"
+                                                      (expand "length")
+                                                      (("1"
+                                                        (assert)
+                                                        nil
+                                                        nil))
+                                                      nil)
+                                                     ("2"
+                                                      (expand "length")
+                                                      (("2"
+                                                        (assert)
+                                                        nil
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil)
+                                       ("2"
+                                        (hide-all-but 1)
+                                        (("2"
+                                          (typepred "n_1")
+                                          (("2"
+                                            (use
+                                             "subtype_length[PVS0Expr[number],(valid_index(length[nat](nat_list_enum(n + 1)) - 1))]")
+                                            (("1" (assert) nil nil)
+                                             ("2"
+                                              (hide-all-but 1)
+                                              (("2"
+                                                (expand
+                                                 "nat_list_enum")
+                                                (("2"
+                                                  (expand
+                                                   "nat_pair_to_list_length")
+                                                  (("2"
+                                                    (lift-if)
+                                                    (("2"
+                                                      (prop)
+                                                      (("1"
+                                                        (expand
+                                                         "length")
+                                                        (("1"
+                                                          (assert)
+                                                          nil
+                                                          nil))
+                                                        nil)
+                                                       ("2"
+                                                        (expand
+                                                         "length")
+                                                        (("2"
+                                                          (assert)
+                                                          nil
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil)
+                                       ("3"
+                                        (hide 2)
+                                        (("3"
+                                          (expand "nat_list_enum")
+                                          (("3"
+                                            (expand
+                                             "nat_pair_to_list_length")
+                                            (("3"
+                                              (lift-if)
+                                              (("3"
+                                                (prop)
+                                                (("1"
+                                                  (expand "length")
+                                                  (("1"
+                                                    (assert)
+                                                    nil
+                                                    nil))
+                                                  nil)
+                                                 ("2"
+                                                  (expand "length")
+                                                  (("2"
+                                                    (assert)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil)
+                               ("2"
+                                (hide-all-but 1)
+                                (("2"
+                                  (skeep)
+                                  (("2"
+                                    (hide -1)
+                                    (("2"
+                                      (expand "nat_list_enum")
+                                      (("2"
+                                        (expand
+                                         "nat_pair_to_list_length")
+                                        (("2"
+                                          (lift-if)
+                                          (("2"
+                                            (prop)
+                                            (("1"
+                                              (expand "length")
+                                              (("1" (assert) nil nil))
+                                              nil)
+                                             ("2"
+                                              (expand "length")
+                                              (("2" (assert) nil nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil)
+                             ("3" (hide-all-but 1)
+                              (("3"
+                                (expand "nat_list_enum")
+                                (("3"
+                                  (expand "nat_pair_to_list_length")
+                                  (("3"
+                                    (lift-if)
+                                    (("3"
+                                      (prop)
+                                      (("1"
+                                        (expand "length")
+                                        (("1" (assert) nil nil))
+                                        nil)
+                                       ("2"
+                                        (expand "length")
+                                        (("2" (assert) nil nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil)
+                       ("2" (hide-all-but 1)
+                        (("2" (expand "nat_list_enum")
+                          (("2" (expand "nat_pair_to_list_length")
+                            (("2" (lift-if)
+                              (("2"
+                                (prop)
+                                (("1"
+                                  (expand "length")
+                                  (("1" (assert) nil nil))
+                                  nil)
+                                 ("2"
+                                  (expand "length")
+                                  (("2" (assert) nil nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil)
+                 ("2" (hide-all-but 1)
+                  (("2" (expand "nat_list_enum")
+                    (("2" (expand "nat_pair_to_list_length")
+                      (("2" (lift-if)
+                        (("2" (prop)
+                          (("1" (expand "length")
+                            (("1" (assert) nil nil)) nil)
+                           ("2" (expand "length")
+                            (("2" (assert) nil nil)) nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil)
+                 ("3" (hide-all-but 1)
+                  (("3" (expand "nat_list_enum")
+                    (("3" (expand "nat_pair_to_list_length")
+                      (("3" (lift-if)
+                        (("3" (prop)
+                          (("1" (expand "length")
+                            (("1" (assert) nil nil)) nil)
+                           ("2" (expand "length")
+                            (("2" (assert) nil nil)) nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil)
+               ("2" (typepred "i")
+                (("2" (hide 2)
+                  (("2"
+                    (use "subtype_length[PVS0Expr[nat],(valid_index(length(nat_list_enum(n + 1)) - 1))]")
+                    (("1" (replace -1)
+                      (("1"
+                        (use "map_length[nat, (valid_index(length(nat_list_enum(n + 1)) - 1))]")
+                        (("1" (assert)
+                          (("1" (replace -1) (("1" (propax) nil nil))
+                            nil))
+                          nil)
+                         ("2" (hide-all-but 1)
+                          (("2" (expand "nat_list_enum")
+                            (("2" (expand "nat_pair_to_list_length")
+                              (("2"
+                                (lift-if)
+                                (("2"
+                                  (prop)
+                                  (("1"
+                                    (expand "length")
+                                    (("1" (assert) nil nil))
+                                    nil)
+                                   ("2"
+                                    (expand "length")
+                                    (("2" (assert) nil nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("2"
+                      (typepred
+                       "map[nat, (valid_index(length[nat](nat_list_enum(n + 1)) - 1))]
+               (nat2PVS0_limit(length[nat](nat_list_enum(1 + n)) - 1))
+               (nat_list_enum(1 + n))")
+                      (("1" (hide-all-but (-1 1))
+                        (("1" (replace -1) (("1" (propax) nil nil))
+                          nil))
+                        nil)
+                       ("2" (hide-all-but 1)
+                        (("2" (expand "nat_list_enum")
+                          (("2" (expand "nat_pair_to_list_length")
+                            (("2" (lift-if)
+                              (("2"
+                                (prop)
+                                (("1"
+                                  (expand "length")
+                                  (("1" (assert) nil nil))
+                                  nil)
+                                 ("2"
+                                  (expand "length")
+                                  (("2" (assert) nil nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil)
+                       ("3" (hide-all-but 1)
+                        (("3" (expand "nat_list_enum")
+                          (("3" (expand "nat_pair_to_list_length")
+                            (("3" (lift-if)
+                              (("3"
+                                (prop)
+                                (("1"
+                                  (expand "length")
+                                  (("1" (assert) nil nil))
+                                  nil)
+                                 ("2"
+                                  (expand "length")
+                                  (("2" (assert) nil nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("3" (hide-all-but 1)
+                      (("3" (expand "nat_list_enum")
+                        (("3" (expand "nat_pair_to_list_length")
+                          (("3" (lift-if)
+                            (("3" (prop)
+                              (("1"
+                                (expand "length")
+                                (("1" (assert) nil nil))
+                                nil)
+                               ("2"
+                                (expand "length")
+                                (("2" (assert) nil nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil)
+               ("3" (hide-all-but 1)
+                (("3" (expand "nat_list_enum")
+                  (("3" (expand "nat_pair_to_list_length")
+                    (("3" (lift-if)
+                      (("3" (prop)
+                        (("1" (expand "length")
+                          (("1" (assert) nil nil)) nil)
+                         ("2" (expand "length")
+                          (("2" (assert) nil nil)) nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((nat_pair_to_list_length def-decl
+     "{l: list[nat] | length(l) = n + 1}" nat_list_enum "numbers/")
+    nil (nat_list_enum const-decl "list[nat]" nat_list_enum "numbers/")
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    nil nil (below type-eq-decl nil nat_types nil)
+    (nat2PVS0_limit def-decl "(valid_index(limit))" pvs0_computable
+     nil)
+    (< const-decl "bool" reals nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (nth def-decl "T" list_props nil)
+    (IMPLIES const-decl "[bool, bool -> bool]" booleans nil)
+    (every_forall formula-decl nil more_list_props "structures/") nil
+    (length_null formula-decl nil more_list_props "structures/")
+    (map_length formula-decl nil more_map_props nil)
+    (subtype_length formula-decl nil more_lists2 nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (subtype_nth formula-decl nil more_lists2 nil)
+    (map_nth_rw formula-decl nil more_map_props nil)
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil) nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (list type-decl nil list_adt nil) nil
+    (length def-decl "nat" list_props nil)
+    (+ const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (limited const-decl "bool" pvs0_computable nil))
+   nil))
+ (p_recursive2nat2_TCC1 0
+  (p_recursive2nat2_TCC1-1 nil 3756210562 ("" (subtype-tcc) nil nil)
+   ((NOT const-decl "[bool -> bool]" booleans nil)
+    (list type-decl nil list_adt nil)
+    (EvalOp1 type-eq-decl nil pvs0_expr nil)
+    (EvalOp2 type-eq-decl nil pvs0_expr nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil) nil nil
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (cons? adt-recognizer-decl "[list -> boolean]" list_adt nil)
+    (lPVS0Expr type-eq-decl nil pvs0_expr nil)
+    (PVS0 type-eq-decl nil pvs0_expr nil)
+    (partial_recursive? const-decl "bool" pvs0_computable nil)
+    (partial_recursive type-eq-decl nil pvs0_computable nil)
+    (< const-decl "bool" reals nil)
+    (length def-decl "nat" list_props nil)
+    (below type-eq-decl nil nat_types nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (lop2 formal-const-decl "list[[[nat, nat] -> nat]]" pvs0_computable
+     nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (limited const-decl "bool" pvs0_computable nil))
+   nil))
+ (nat2p_recursive2_TCC1 0
+  (nat2p_recursive2_TCC1-1 nil 3756210562
+   ("" (skeep)
+    (("" (expand "partial_recursive?")
+      (("" (prop)
+        (("1" (lemma "tuple2nat_assump") (("1" (propax) nil nil)) nil)
+         ("2" (typepred "nat2listPVS0_limit(n)")
+          (("2" (expand "limited") (("2" (propax) nil nil)) nil)) nil))
+        nil))
+      nil))
+    nil)
+   ((partial_recursive? const-decl "bool" pvs0_computable nil)
+    (nat2listPVS0_limit const-decl "(limited)" pvs0_computable nil)
+    (limited const-decl "bool" pvs0_computable nil)
+    (cons? adt-recognizer-decl "[list -> boolean]" list_adt nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil) nil nil
+    (list type-decl nil list_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (tuple2nat_assump formula-decl nil pvs0_computable nil))
+   nil))
+ (nat2PVS0_PVS02nat_limit 0
+  (nat2PVS0_PVS02nat_limit-1 nil 3756214959
+   ("" (skeep)
+    (("" (induct "pvsexpr")
+      (("1" (typepred "pvsexpr!1") (("1" (propax) nil nil)) nil)
+       ("2" (skeep)
+        (("2" (expand "PVS02nat_limit")
+          (("2" (expand "nat2PVS0_limit")
+            (("2" (case "divides(5, 5 * cnst1_var) ")
+              (("1" (assert) nil nil)
+               ("2" (hide-all-but 1) (("2" (grind) nil nil)) nil))
+              nil))
+            nil))
+          nil))
+        nil)
+       ("3" (prop) (("3" (grind) nil nil)) nil)
+       ("4" (skeep)
+        (("4" (prop)
+          (("1" (expand "PVS02nat_limit" 1)
+            (("1" (expand "nat2PVS0_limit" 1)
+              (("1" (lift-if)
+                (("1" (prop)
+                  (("1" (expand "divides") (("1" (propax) nil nil))
+                    nil)
+                   ("2" (expand "divides") (("2" (propax) nil nil))
+                    nil)
+                   ("3"
+                    (case-replace "5 *
+                     tuple2nat(op11_var, PVS02nat_limit(limit)(op12_var))
+                     / 5 = tuple2nat(op11_var, PVS02nat_limit(limit)(op12_var))")
+                    (("1" (rewrite "nat2tuple_tuple2nat")
+                      (("1" (assert) nil nil)) nil)
+                     ("2" (assert) nil nil))
+                    nil)
+                   ("4" (expand "divides") (("4" (propax) nil nil))
+                    nil)
+                   ("5" (expand "divides")
+                    (("5"
+                      (inst 3
+                       "tuple2nat(op11_var, PVS02nat_limit(limit)(op12_var))")
+                      nil nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil)
+           ("2" (hide 2)
+            (("2" (expand "valid_index")
+              (("2" (expand "valid_index_rec")
+                (("2" (skeep)
+                  (("2" (inst?)
+                    (("2" (expand "subterm" -2)
+                      (("2" (assert) nil nil)) nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil)
+       ("5" (skeep)
+        (("5" (split)
+          (("1" (split)
+            (("1" (expand "PVS02nat_limit" 1)
+              (("1" (expand "nat2PVS0_limit" 1)
+                (("1" (lift-if)
+                  (("1" (prop)
+                    (("1" (expand "divides") (("1" (propax) nil nil))
+                      nil)
+                     ("2" (expand "divides") (("2" (propax) nil nil))
+                      nil)
+                     ("3" (expand "divides") (("3" (propax) nil nil))
+                      nil)
+                     ("4"
+                      (case-replace "5
+                                             *
+                                             tuple2nat
+                                             (op21_var,
+                                              tuple2nat
+                                              (PVS02nat_limit
+                                               (limit)(op22_var),
+                                               PVS02nat_limit
+                                               (limit)(op23_var)))
+                                             /
+                                             5 = tuple2nat
+                                             (op21_var,
+                                              tuple2nat
+                                              (PVS02nat_limit
+                                               (limit)(op22_var),
+                                               PVS02nat_limit
+                                               (limit)(op23_var)))")
+                      (("1" (rewrite "nat2tuple_tuple2nat")
+                        (("1" (assert)
+                          (("1" (rewrite "nat2tuple_tuple2nat")
+                            (("1" (assert) nil nil)) nil))
+                          nil))
+                        nil)
+                       ("2" (assert) nil nil))
+                      nil)
+                     ("5" (expand "divides")
+                      (("5"
+                        (inst 1 "tuple2nat(op21_var,
+                   tuple2nat(PVS02nat_limit(limit)(op22_var),
+                             PVS02nat_limit(limit)(op23_var)))")
+                        nil nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil)
+             ("2" (hide -1 2)
+              (("2" (expand "valid_index")
+                (("2" (expand "valid_index_rec")
+                  (("2" (skeep)
+                    (("2" (inst?)
+                      (("2" (expand "subterm" -2)
+                        (("2" (assert) nil nil)) nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil)
+           ("2" (hide -1 2)
+            (("2" (expand "valid_index")
+              (("2" (expand "valid_index_rec")
+                (("2" (skeep)
+                  (("2" (inst?)
+                    (("2" (expand "subterm" -2)
+                      (("2" (assert) nil nil)) nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil)
+       ("6" (skeep)
+        (("6" (prop)
+          (("1" (expand "PVS02nat_limit" 1)
+            (("1" (expand "nat2PVS0_limit" 1)
+              (("1" (lift-if)
+                (("1" (prop)
+                  (("1" (expand "divides") (("1" (propax) nil nil))
+                    nil)
+                   ("2"
+                    (case-replace
+                     "(5 * PVS02nat_limit(limit)(rec2_var) +
+                                  5 *
+                                   (PVS02nat_limit(limit)(rec2_var)
+                                    *
+                                    limit)
+                                  + 5 * rec1_var)
+                                 / 5 = PVS02nat_limit(limit)(rec2_var) +
+                                  
+                                   (PVS02nat_limit(limit)(rec2_var)
+                                    *
+                                    limit)
+                                  + rec1_var")
+                    (("1"
+                      (case-replace "rem(1 + limit)
+             (PVS02nat_limit(limit)(rec2_var) +
+               (PVS02nat_limit(limit)(rec2_var) * limit)
+               + rec1_var) = rec1_var")
+                      (("1"
+                        (case-replace
+                         "floor((PVS02nat_limit(limit)(rec2_var) +
+                                 (PVS02nat_limit(limit)(rec2_var) * limit)
+                                 + rec1_var)
+                                / (1 + limit))= PVS02nat_limit(limit)(rec2_var)")
+                        (("1" (assert) nil nil)
+                         ("2"
+                          (case-replace
+                           "(PVS02nat_limit(limit)(rec2_var) +
+              (PVS02nat_limit(limit)(rec2_var) * limit)
+              + rec1_var)
+             / (1 + limit) = PVS02nat_limit(limit)(rec2_var) + rec1_var/(1+limit)")
+                          (("1" (lemma "floor_plus_int")
+                            (("1"
+                              (inst -1
+                               "PVS02nat_limit(limit)(rec2_var)"
+                               "rec1_var / (1 + limit)")
+                              (("1"
+                                (replace -1)
+                                (("1"
+                                  (assert)
+                                  (("1"
+                                    (use "floor_0")
+                                    (("1"
+                                      (prop)
+                                      (("1" (assert) nil nil)
+                                       ("2"
+                                        (hide-all-but (-7 1))
+                                        (("2"
+                                          (expand "valid_index")
+                                          (("2"
+                                            (expand "valid_index_rec")
+                                            (("2"
+                                              (inst
+                                               -1
+                                               "rec1_var"
+                                               "rec2_var")
+                                              (("2"
+                                                (prop)
+                                                (("1"
+                                                  (lemma
+                                                   "both_sides_div_pos_lt1")
+                                                  (("1"
+                                                    (inst
+                                                     -1
+                                                     "(1+limit)"
+                                                     "rec1_var"
+                                                     "1+limit")
+                                                    (("1"
+                                                      (assert)
+                                                      (("1"
+                                                        (grind)
+                                                        nil
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil)
+                                                 ("2"
+                                                  (expand "subterm")
+                                                  (("2"
+                                                    (propax)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil)
+                           ("2" (hide-all-but 1)
+                            (("2"
+                              (case-replace
+                               "PVS02nat_limit(limit)(rec2_var) +
+        (PVS02nat_limit(limit)(rec2_var) * limit) = PVS02nat_limit(limit)(rec2_var) *(1+limit)")
+                              (("1"
+                                (name-replace
+                                 "p"
+                                 "PVS02nat_limit(limit)(rec2_var)")
+                                (("1"
+                                  (name-replace "l" "(1 + limit)")
+                                  (("1" (assert) nil nil))
+                                  nil))
+                                nil)
+                               ("2" (assert) nil nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil)
+                       ("2" (hide-all-but (-4 1))
+                        (("2"
+                          (case-replace
+                           "PVS02nat_limit(limit)(rec2_var) +
+           (PVS02nat_limit(limit)(rec2_var) * limit) = PVS02nat_limit(limit)(rec2_var) * (1+limit)")
+                          (("1"
+                            (name-replace "p"
+                             "PVS02nat_limit(limit)(rec2_var)")
+                            (("1" (name-replace "l" "1+limit")
+                              (("1"
+                                (typepred "rem(l)(p * l + rec1_var)")
+                                (("1"
+                                  (skeep)
+                                  (("1"
+                                    (rewrite "rem_def2")
+                                    (("1"
+                                      (expand "divides")
+                                      (("1"
+                                        (inst 1 "p")
+                                        (("1" (assert) nil nil))
+                                        nil))
+                                      nil)
+                                     ("2"
+                                      (hide-all-but (-4 1))
+                                      (("2"
+                                        (expand "l")
+                                        (("2"
+                                          (expand "valid_index")
+                                          (("2"
+                                            (expand "valid_index_rec")
+                                            (("2"
+                                              (inst
+                                               -1
+                                               "rec1_var"
+                                               "rec2_var")
+                                              (("2"
+                                                (assert)
+                                                (("2"
+                                                  (expand "subterm")
+                                                  (("2"
+                                                    (propax)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil)
+                           ("2" (assert) nil nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("2" (assert) nil nil))
+                    nil)
+                   ("3" (expand "divides") (("3" (propax) nil nil))
+                    nil)
+                   ("4" (expand "divides") (("4" (propax) nil nil))
+                    nil)
+                   ("5" (expand "divides")
+                    (("5"
+                      (inst 4
+                       "PVS02nat_limit(limit)(rec2_var) + (PVS02nat_limit(limit)(rec2_var) * limit) + rec1_var")
+                      (("5" (assert) nil nil)) nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil)
+           ("2" (hide 2)
+            (("2" (expand "valid_index")
+              (("2" (expand "valid_index_rec")
+                (("2" (skeep)
+                  (("2" (inst?)
+                    (("2" (assert)
+                      (("2" (expand "subterm" 2)
+                        (("2" (propax) nil nil)) nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil)
+       ("7" (skeep)
+        (("7" (split)
+          (("1" (split)
+            (("1" (split)
+              (("1" (expand "PVS02nat_limit" 1)
+                (("1" (expand "nat2PVS0_limit" 1)
+                  (("1" (lift-if)
+                    (("1" (prop)
+                      (("1" (assert) nil nil)
+                       ("2" (expand "divides") (("2" (propax) nil nil))
+                        nil)
+                       ("3" (expand "divides") (("3" (propax) nil nil))
+                        nil)
+                       ("4" (expand "divides") (("4" (propax) nil nil))
+                        nil)
+                       ("5" (expand "divides") (("5" (propax) nil nil))
+                        nil)
+                       ("6"
+                        (case-replace "5
+                                             *
+                                             tuple2nat
+                                             (PVS02nat_limit
+                                              (limit)(ite1_var),
+                                              tuple2nat
+                                              (PVS02nat_limit
+                                               (limit)(ite2_var),
+                                               PVS02nat_limit
+                                               (limit)(ite3_var)))
+                                             /
+                                             5 = tuple2nat
+                                             (PVS02nat_limit
+                                              (limit)(ite1_var),
+                                              tuple2nat
+                                              (PVS02nat_limit
+                                               (limit)(ite2_var),
+                                               PVS02nat_limit
+                                               (limit)(ite3_var)))")
+                        (("1" (rewrite "nat2tuple_tuple2nat")
+                          (("1" (assert)
+                            (("1" (rewrite "nat2tuple_tuple2nat")
+                              (("1" (assert) nil nil)) nil))
+                            nil))
+                          nil)
+                         ("2" (assert) nil nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil)
+               ("2" (hide-all-but (-3 1))
+                (("2" (expand "valid_index")
+                  (("2" (expand "valid_index_rec")
+                    (("2" (skeep)
+                      (("2" (inst?)
+                        (("2" (expand "subterm" -2)
+                          (("2" (assert) nil nil)) nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil)
+             ("2" (hide-all-but (-3 1))
+              (("2" (expand "valid_index")
+                (("2" (expand "valid_index_rec")
+                  (("2" (skeep)
+                    (("2" (inst?)
+                      (("2" (expand "subterm" -2)
+                        (("2" (assert) nil nil)) nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil)
+           ("2" (hide-all-but (-3 1))
+            (("2" (expand "valid_index")
+              (("2" (expand "valid_index_rec")
+                (("2" (skeep)
+                  (("2" (inst?)
+                    (("2" (expand "subterm" -2)
+                      (("2" (assert) nil nil)) nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((+ const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (rem_def2 formula-decl nil modulo_arithmetic nil)
+    (floor const-decl "{i | i <= x & x < i + 1}" floor_ceil nil)
+    (<= const-decl "bool" reals nil)
+    (integer nonempty-type-from-decl nil integers nil)
+    (nonneg_floor_is_nat application-judgement "nat" floor_ceil nil)
+    (rat_minus_rat_is_rat application-judgement "rat" rationals nil)
+    (posint nonempty-type-eq-decl nil integers nil)
+    (floor_plus_int formula-decl nil floor_ceil nil)
+    (floor_0 formula-decl nil floor_ceil nil)
+    (posreal nonempty-type-eq-decl nil real_types nil)
+    (nonneg_real nonempty-type-eq-decl nil real_types nil)
+    (both_sides_div_pos_lt1 formula-decl nil real_props nil)
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (nnrat_plus_nnrat_is_nnrat application-judgement "nonneg_rat"
+     rationals nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (> const-decl "bool" reals nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (< const-decl "bool" reals nil)
+    (mod nonempty-type-eq-decl nil euclidean_division nil)
+    (rem const-decl "{r: mod(b) | EXISTS q: x = b * q + r}"
+         modulo_arithmetic nil)
+    (nnint_plus_nnint_is_nnint application-judgement "nonneg_int"
+     integers nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (tuple2nat const-decl "nat" tuple2nat "numbers/")
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/= const-decl "boolean" notequal nil)
+    (nat2tuple_tuple2nat formula-decl nil tuple2nat "numbers/")
+    (posrat_div_posrat_is_posrat application-judgement "posrat"
+     rationals nil)
+    (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
+    (valid_index_rec const-decl "bool" pvs0_lang nil)
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (int_plus_int_is_int application-judgement "int" integers nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (nnrat_div_posrat_is_nnrat application-judgement "nonneg_rat"
+     rationals nil)
+    (* const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (nnint_times_nnint_is_nnint application-judgement "nonneg_int"
+     integers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (PVS0Expr_induction formula-decl nil PVS0Expr_adt nil)
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (PVS02nat_limit def-decl "nat" pvs0_computable nil)
+    (nat2PVS0_limit def-decl "(valid_index(limit))" pvs0_computable
+     nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (IMPLIES const-decl "[bool, bool -> bool]" booleans nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil))
+   shostak))
+ (PVS02nat_nat2PVS0_limit 0
+  (PVS02nat_nat2PVS0_limit-1 nil 3756227594
+   ("" (skeep)
+    (("" (measure-induct+ "n" "n")
+      (("" (expand "nat2PVS0_limit" 1)
+        (("" (lift-if)
+          (("" (prop)
+            (("1" (grind) nil nil)
+             ("2" (expand "PVS02nat_limit" 1) (("2" (assert) nil nil))
+              nil)
+             ("3" (expand "PVS02nat_limit" 1)
+              (("3"
+                (inst -2 "floor
+                                       (((x!1 - 2) / 5) / (1 + limit))")
+                (("1" (prop)
+                  (("1" (replace -1)
+                    (("1"
+                      (case-replace
+                       "2 + 5 * floor(((x!1 - 2) / 5) / (1 + limit)) +
+       5 * rem(1 + limit)((x!1 - 2) / 5)
+       + 5 * (floor(((x!1 - 2) / 5) / (1 + limit)) * limit) =
+
+2 + 
+        5 * (floor(((x!1 - 2) / 5) / (1 + limit)) * (1+limit) + rem(1 + limit)((x!1 - 2) / 5))")
+                      (("1" (lemma "rem_floor")
+                        (("1" (inst -1 "1+limit" "(x!1-2)/5")
+                          (("1" (replace -1 :dir rl)
+                            (("1" (assert) nil nil)) nil)
+                           ("2" (rewrite "nat2PVS0_limit_TCC4") nil
+                            nil))
+                          nil))
+                        nil)
+                       ("2" (assert) nil nil)
+                       ("3" (rewrite "nat2PVS0_limit_TCC4") nil nil))
+                      nil))
+                    nil)
+                   ("2" (rewrite "nat2PVS0_limit_TCC6") nil nil))
+                  nil)
+                 ("2" (rewrite "nat2PVS0_limit_TCC5") nil nil))
+                nil))
+              nil)
+             ("4" (expand "PVS02nat_limit" 1)
+              (("4"
+                (inst-cp -2 "nat2tuple
+                                                ((x!1 - 3) / 5)`2")
+                (("1" (prop)
+                  (("1" (replace -1)
+                    (("1"
+                      (case-replace
+                       "(nat2tuple((x!1 - 3) / 5)`1, nat2tuple((x!1 - 3) / 5)`2) = nat2tuple((x!1 - 3) / 5)")
+                      (("1" (rewrite "tuple2nat_nat2tuple")
+                        (("1" (assert) nil nil)
+                         ("2" (rewrite "nat2PVS0_limit_TCC8") nil nil))
+                        nil)
+                       ("2" (assert) nil nil)
+                       ("3" (rewrite "nat2PVS0_limit_TCC8") nil nil))
+                      nil))
+                    nil)
+                   ("2" (lemma "nat2tuple_first")
+                    (("2" (inst -1 "(x!1 - 3) / 5")
+                      (("1" (assert) nil nil)
+                       ("2" (rewrite "nat2PVS0_limit_TCC8") nil nil))
+                      nil))
+                    nil))
+                  nil)
+                 ("2" (rewrite "nat2PVS0_limit_TCC8") nil nil))
+                nil))
+              nil)
+             ("5" (expand "PVS02nat_limit" 1)
+              (("5"
+                (inst-cp -2 "nat2tuple
+                                            (nat2tuple
+                                             ((x!1 - 4) / 5)`2)`2")
+                (("1"
+                  (inst -2 "nat2tuple
+                                            (nat2tuple
+                                             ((x!1 - 4) / 5)`2)`1")
+                  (("1" (split)
+                    (("1" (split)
+                      (("1" (replace -1)
+                        (("1" (replace -2)
+                          (("1"
+                            (case "(nat2tuple(nat2tuple((x!1 - 4) / 5)`2)`1,
+                            nat2tuple(nat2tuple((x!1 - 4) / 5)`2)`2) =
+ nat2tuple(nat2tuple((x!1 - 4) / 5)`2)")
+                            (("1" (replaces -1)
+                              (("1"
+                                (rewrite "tuple2nat_nat2tuple")
+                                (("1"
+                                  (case-replace
+                                   "(nat2tuple((x!1 - 4) / 5)`1, nat2tuple((x!1 - 4) / 5)`2) = nat2tuple((x!1 - 4) / 5)")
+                                  (("1"
+                                    (rewrite "tuple2nat_nat2tuple")
+                                    (("1" (assert) nil nil))
+                                    nil)
+                                   ("2" (assert) nil nil))
+                                  nil))
+                                nil))
+                              nil)
+                             ("2" (assert) nil nil)
+                             ("3" (rewrite "nat2PVS0_limit_TCC11") nil
+                              nil))
+                            nil))
+                          nil))
+                        nil)
+                       ("2" (rewrite "nat2PVS0_limit_TCC13") nil nil))
+                      nil)
+                     ("2" (rewrite "nat2PVS0_limit_TCC12") nil nil))
+                    nil)
+                   ("2" (rewrite "nat2PVS0_limit_TCC11") nil nil))
+                  nil)
+                 ("2" (rewrite "nat2PVS0_limit_TCC11") nil nil))
+                nil))
+              nil)
+             ("6" (expand "PVS02nat_limit" 2)
+              (("6"
+                (inst-cp -1 "nat2tuple
+                                            (nat2tuple
+                                             ((x!1 - 5) / 5)`2)`2")
+                (("1"
+                  (inst-cp -1 "nat2tuple
+                                            (nat2tuple
+                                             ((x!1 - 5) / 5)`2)`1")
+                  (("1"
+                    (inst -1 "nat2tuple
+                                             ((x!1 - 5) / 5)`1")
+                    (("1" (split)
+                      (("1" (split)
+                        (("1" (split)
+                          (("1" (replace -1)
+                            (("1" (replace -2)
+                              (("1"
+                                (replace -3)
+                                (("1"
+                                  (case-replace
+                                   "(nat2tuple(nat2tuple((x!1 - 5) / 5)`2)`1,
+                            nat2tuple(nat2tuple((x!1 - 5) / 5)`2)`2) = nat2tuple(nat2tuple((x!1 - 5) / 5)`2)")
+                                  (("1"
+                                    (rewrite "tuple2nat_nat2tuple")
+                                    (("1"
+                                      (case-replace
+                                       "(nat2tuple((x!1 - 5) / 5)`1, nat2tuple((x!1 - 5) / 5)`2) = nat2tuple((x!1 - 5) / 5)")
+                                      (("1"
+                                        (rewrite "tuple2nat_nat2tuple")
+                                        (("1" (assert) nil nil)
+                                         ("2"
+                                          (rewrite
+                                           "nat2PVS0_limit_TCC15")
+                                          nil
+                                          nil))
+                                        nil)
+                                       ("2" (assert) nil nil)
+                                       ("3"
+                                        (rewrite
+                                         "nat2PVS0_limit_TCC15")
+                                        nil
+                                        nil))
+                                      nil)
+                                     ("2"
+                                      (rewrite "nat2PVS0_limit_TCC15")
+                                      nil
+                                      nil))
+                                    nil)
+                                   ("2" (assert) nil nil)
+                                   ("3"
+                                    (rewrite "nat2PVS0_limit_TCC15")
+                                    nil
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil)
+                           ("2" (rewrite "nat2PVS0_limit_TCC18") nil
+                            nil))
+                          nil)
+                         ("2" (rewrite "nat2PVS0_limit_TCC17") nil
+                          nil))
+                        nil)
+                       ("2" (rewrite "nat2PVS0_limit_TCC16") nil nil))
+                      nil)
+                     ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+                    nil)
+                   ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+                  nil)
+                 ("2" (rewrite "nat2PVS0_limit_TCC15") nil nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((int_plus_int_is_int application-judgement "int" integers nil)
+    (mult_divides1 application-judgement "(divides(n))" divides nil)
+    (mult_divides2 application-judgement "(divides(m))" divides nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (rat_div_nzrat_is_rat application-judgement "rat" rationals nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (rat_times_rat_is_rat application-judgement "rat" rationals nil)
+    (rat_plus_rat_is_rat application-judgement "rat" rationals nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (integer nonempty-type-from-decl nil integers nil)
+    (<= const-decl "bool" reals nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (+ const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (floor const-decl "{i | i <= x & x < i + 1}" floor_ceil nil)
+    (/= const-decl "boolean" notequal nil)
+    (nznum nonempty-type-eq-decl nil number_fields nil)
+    (/ const-decl "[numfield, nznum -> numfield]" number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (x!1 skolem-const-decl "nat" pvs0_computable nil)
+    (limit skolem-const-decl "nat" pvs0_computable nil)
+    (even_minus_odd_is_odd application-judgement "odd_int" integers
+     nil)
+    (odd_plus_odd_is_even application-judgement "even_int" integers
+     nil)
+    (nat2PVS0_limit_TCC6 termination-tcc nil pvs0_computable nil)
+    (rem_floor formula-decl nil modulo_arithmetic nil)
+    (nat2PVS0_limit_TCC4 subtype-tcc nil pvs0_computable nil)
+    (* const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (> const-decl "bool" reals nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (mod nonempty-type-eq-decl nil euclidean_division nil)
+    (rem const-decl "{r: mod(b) | EXISTS q: x = b * q + r}"
+         modulo_arithmetic nil)
+    (nat2PVS0_limit_TCC5 subtype-tcc nil pvs0_computable nil)
+    (nnint_times_nnint_is_nnint application-judgement "nonneg_int"
+     integers nil)
+    (nat2tuple def-decl "[nat, nat]" tuple2nat "numbers/")
+    (nat2tuple_first formula-decl nil tuple2nat "numbers/")
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (tuple2nat_nat2tuple formula-decl nil tuple2nat "numbers/")
+    (nat2PVS0_limit_TCC8 subtype-tcc nil pvs0_computable nil)
+    (nat2PVS0_limit_TCC13 termination-tcc nil pvs0_computable nil)
+    (TRUE const-decl "bool" booleans nil)
+    (nat2PVS0_limit_TCC11 subtype-tcc nil pvs0_computable nil)
+    (nat2PVS0_limit_TCC12 termination-tcc nil pvs0_computable nil)
+    (nat2PVS0_limit_TCC16 termination-tcc nil pvs0_computable nil)
+    (nat2PVS0_limit_TCC18 termination-tcc nil pvs0_computable nil)
+    (nat2PVS0_limit_TCC15 subtype-tcc nil pvs0_computable nil)
+    (nat2PVS0_limit_TCC17 termination-tcc nil pvs0_computable nil)
+    (nat2PVS0_limit def-decl "(valid_index(limit))" pvs0_computable
+     nil)
+    (PVS02nat_limit def-decl "nat" pvs0_computable nil)
+    (valid_index const-decl "bool" pvs0_computable nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (every adt-def-decl "boolean" PVS0Expr_adt nil)
+    (PRED type-eq-decl nil defined_types nil)
+    (PVS0Expr type-decl nil PVS0Expr_adt nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (wf_nat formula-decl nil naturalnumbers nil)
+    (< const-decl "bool" reals nil)
+    (naturalnumber type-eq-decl nil naturalnumbers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (measure_induction formula-decl nil measure_induction nil)
+    (well_founded? const-decl "bool" orders nil)
+    (pred type-eq-decl nil defined_types nil))
+   shostak)))
+
