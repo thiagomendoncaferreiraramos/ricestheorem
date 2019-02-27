@@ -24,7 +24,7 @@ fixedpoint [false_val:nat,lop1:list[[nat->nat]],lop2:list[[[nat,nat]->nat]]]
       semantic_rel(universal)(tuple2nat(m,n),o1) <=> semantic_rel(nat2p_recursive2(m))(n,o1)
    ENDASSUMING
 
-   IMPORTING more_lists
+   IMPORTING map_append
 
    part2part(c : computable)(p : partial_recursive) : partial_recursive = 
    nat2p_recursive2(choose({o1 : nat | semantic_rel(c)(p_recursive2nat2(p),o1)}))

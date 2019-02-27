@@ -55,7 +55,7 @@ BEGIN
    (semantic_rel(a)(i,o1) AND semantic_rel(b)(i,o2)) => o1 = o2)
    =>  (P(a) <=> P(b))
 
-  IMPORTING more_lists
+  IMPORTING map_append
 
   % The Rice`s Theorem says that it is impossible deciding a semantic property except this is
   % the full or the empty set.

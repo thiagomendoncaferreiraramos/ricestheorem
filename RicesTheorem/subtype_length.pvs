@@ -1,4 +1,4 @@
-more_lists2   [ A :TYPE, B : TYPE FROM A ]
+subtype_length   [ A :TYPE, B : TYPE FROM A ]
 		: THEORY
 
   BEGIN
@@ -13,4 +13,4 @@ more_lists2   [ A :TYPE, B : TYPE FROM A ]
 
   
 
-  END more_lists2
+  END subtype_length

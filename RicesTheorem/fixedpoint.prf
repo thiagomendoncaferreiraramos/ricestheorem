@@ -1538,7 +1538,7 @@
      integers nil)
     (map_length formula-decl nil more_map_props nil)
     (int_minus_int_is_int application-judgement "int" integers nil)
-    (map_append formula-decl nil more_lists nil)
+    (map_append formula-decl nil map_append nil)
     (offset_composition2 formula-decl nil pvs0_lang nil)
     (add_rec_list2 formula-decl nil pvs0_lang nil)
     (nnint_plus_posint_is_posint application-judgement "posint"
@@ -3141,8 +3141,7 @@
     (nnint_plus_posint_is_posint application-judgement "posint"
      integers nil)
     (add_rec_list2 formula-decl nil pvs0_lang nil)
-    (offset_composition2 formula-decl nil pvs0_lang nil)
-    (map_append formula-decl nil more_lists nil)
+    (offset_composition2 formula-decl nil pvs0_lang nil) nil
     (int_minus_int_is_int application-judgement "int" integers nil)
     (map_length formula-decl nil more_map_props nil)
     (nnint_plus_nnint_is_nnint application-judgement "nonneg_int"

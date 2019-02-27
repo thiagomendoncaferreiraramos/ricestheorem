@@ -10,7 +10,7 @@ BEGIN
   ENDASSUMING
   IMPORTING pvs0_lang[nat],
 	    structures@more_list_props,
-	    more_lists2, more_lists3
+	    subtype_length, subtype_map
 
  
 

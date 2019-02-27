@@ -2646,10 +2646,10 @@
                  (nat_list_enum(1 + n))))" pvs0_computable nil)
     (length_null formula-decl nil more_list_props "structures/")
     (map_length formula-decl nil more_map_props nil)
-    (subtype_length formula-decl nil more_lists2 nil)
+    (subtype_length formula-decl nil subtype_length nil)
     (nnint_plus_posint_is_posint application-judgement "posint"
      integers nil)
-    (subtype_nth formula-decl nil more_lists2 nil)
+    (subtype_nth formula-decl nil subtype_length nil)
     (map_nth_rw formula-decl nil more_map_props nil)
     (number nonempty-type-decl nil numbers nil)
     (boolean nonempty-type-decl nil booleans nil)
@@ -3856,12 +3856,12 @@
     (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
     (valid_index_rec const-decl "bool" pvs0_lang nil)
     (NOT const-decl "[bool -> bool]" booleans nil)
-    (subtype_length formula-decl nil more_lists2 nil)
+    (subtype_length formula-decl nil subtype_length nil)
     (posint_plus_nnint_is_posint application-judgement "posint"
      integers nil)
     (nnint_plus_posint_is_posint application-judgement "posint"
      integers nil)
-    (subtype_map formula-decl nil more_lists3 nil)
+    (subtype_map formula-decl nil subtype_map nil)
     (O const-decl "T3" function_props nil)
     (= const-decl "[T, T -> boolean]" equalities nil)
     (+ const-decl "[numfield, numfield -> numfield]" number_fields nil)
@@ -5151,7 +5151,7 @@
     (int_minus_int_is_int application-judgement "int" integers nil)
     (real_ge_is_total_order name-judgement "(total_order?[real])"
      real_props nil)
-    (subtype_map formula-decl nil more_lists3 nil)
+    (subtype_map formula-decl nil subtype_map nil)
     (IFF const-decl "[bool, bool -> bool]" booleans nil)
     (= const-decl "[T, T -> boolean]" equalities nil)
     (nnint_plus_posint_is_posint application-judgement "posint"
@@ -5171,7 +5171,7 @@
     (PVS02nat_limit def-decl "nat" pvs0_computable nil)
     (map_list_composition formula-decl nil map_props nil)
     (map adt-def-decl "list[T1]" list_adt_map nil)
-    (subtype_length formula-decl nil more_lists2 nil)
+    (subtype_length formula-decl nil subtype_length nil)
     (listPVS02nat_limit const-decl "nat" pvs0_computable nil))
    shostak))
  (p_recursive2nat2_opposite 0

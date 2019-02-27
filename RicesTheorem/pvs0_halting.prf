@@ -4580,7 +4580,7 @@
     (odd_minus_odd_is_even application-judgement "even_int" integers
      nil)
     (append_assoc formula-decl nil list_props nil)
-    (map_append formula-decl nil more_lists nil)
+    (map_append formula-decl nil map_append nil)
     (map_list_composition formula-decl nil map_props nil)
     (offset_composition2 formula-decl nil pvs0_lang nil)
     (int_plus_int_is_int application-judgement "int" integers nil)
