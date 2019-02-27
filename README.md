@@ -34,7 +34,7 @@ In pvs0_expr.pvs includes the semantic evaluation predically and functionally of
 
 In PVS0Expr.pvs contains the grammar of the PVS0 expressions.
 
-more_lists.pvs, more_list2.pvs, more_list3.pvs include properties related with types and lists.
+subtype_length.pvs, subtype_map.pvs, map_append.pvs include properties related with types and lists.
 
 
 Authors: Thiago Mendonca Ferreira Ramos, Ariane Alves Almeida and Mauricio Ayala-Rincon; Universidade de Brasilia, Brazil
