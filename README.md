@@ -1,5 +1,5 @@
 # ricestheorem
-Formalisation of the Rice's Theorem in PVS for a functional language.
+Formalization of the Rice's Theorem in PVS for the functional language PVS0.
 
 The main files described in the file top.pvs are pvs0_halting.pvs and fixedpoint.pvs.
 
