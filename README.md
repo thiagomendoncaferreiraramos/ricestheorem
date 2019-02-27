@@ -12,11 +12,11 @@ In fixedpoint.pvs, there is the fixed point theorem (called fixed_point).
 In pvs0_computable.pvs, there are definitions of the types Computable and PartialRecursive. There are also properties related to
 the countability the elements from the type PartialRecursive.
 
-In pvs0_to_nat.pvs, there are more properties related to countability of PVS0 expression that works with natural.
+In pvs0_to_nat.pvs, there are more properties related to countability of PVS0 expressions that work with natural numbers.
 
 In pvs0_lang.pvs, there are the shifiting code lemmas (called add_rec_list and add_rec_list2) and the offset definition.
 
-In pvs0_expr.pvs, there are the semantic evalution predically and functionally of the PVS0 programs.
+In pvs0_expr.pvs, there are the semantic evaluation predically and functionally of the PVS0 programs.
 
 In PVS0Expr.pvs, there is the grammar of the PVS0 expressions.
 
