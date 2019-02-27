@@ -1,0 +1,125 @@
+pvs0_computable[false_val:nat,lop1:list[[nat->nat]],lop2:list[[[nat,nat]->nat]]] : THEORY
+BEGIN
+ ASSUMING
+	IMPORTING 
+            pvs0_to_nat
+	    
+	tuple2nat_assump : ASSUMPTION
+	EXISTS( i : below[length(lop2)]) : nth(lop2,i) = tuple2nat
+
+  ENDASSUMING
+  IMPORTING pvs0_lang[nat],
+	    structures@more_list_props,
+	    more_lists2, more_lists3
+
+ 
+
+    % pvs0_level2_size: CHALLENGE
+    % FORALL(n : nat, pvs0: (pvs0_level2(n))):
+    % length(pvs0`1)-length(lop1) = n AND
+    % length(pvs0`2)-length(lop2) = n
+
+    % pvs0_level1_size: CHALLENGE
+    % FORALL(n : nat, pvs0: (pvs0_level(n))):
+    % length(pvs0`1)-length(lop1) = n AND
+    % length(pvs0`2)-length(lop2) = n
+    
+    % pvs0_level2_is_1 : CHALLENGE
+    % FORALL(n: nat , pvs0 : (pvs0_level2(n))) :  EXISTS(m: nat, pvs1 : (pvs0_level(m))) :
+    % FORALL(input,output:nat): semantic_rel(pvs0)(input,output) <=> semantic_rel(pvs1)(input,output)
+    
+    % extensionality: CHALLENGE
+    % FORALL(f,g: PVS0_partial_recursive, pvs0expr: PVS0Expr):
+    % EXISTS(n : nat): pvs0_level(n)(append(f`1,(g`1)^(length(lop1),length(g`1))),
+    % 				append(f`2,(g`2)^(length(lop2), length(g`2))),false_val,pvs0expr)
+
+    partial_recursive?(pvs0 : PVS0) : bool =
+   ( pvs0`1 = lop1 AND pvs0`2 = lop2 AND pvs0`3 = false_val) AND
+    (EXISTS( i : below[length(lop2)]) : nth(lop2,i) = tuple2nat) AND
+    FORALL(i : below[length(pvs0`4)]) : valid_index_rec(nth(pvs0`4,i),length(pvs0`4))
+
+    partial_recursive : TYPE = (partial_recursive?)
+
+    p_recursive2nat(pvs0 : partial_recursive) : nat = listPVS02nat(pvs0`4)
+
+    nat2p_recursive : [nat -> partial_recursive] = inverse(p_recursive2nat)
+
+    computable?(pvs0 : PVS0) : bool = partial_recursive?(pvs0) AND terminating?(pvs0)
+
+    computable: TYPE = (computable?)
+
+    valid_index(limit : nat)(pvs : PVS0Expr) :bool = valid_index_rec(pvs, limit+1) 
+
+    nat2PVS0_limit(limit : nat)(n : nat): RECURSIVE (valid_index(limit)) =
+    IF n = 0 THEN
+      vr
+    ELSIF divides(5, n-1) THEN
+      cnst((n-1)/5)
+    ELSIF divides(5, n-2) THEN
+      rec(rem(limit+1)((n-2)/5),nat2PVS0_limit(limit)(floor(((n-2)/5)/(limit+1))))
+    ELSIF divides(5, n-3) THEN
+      op1(nat2tuple((n-3)/5)`1,nat2PVS0_limit(limit)(nat2tuple((n-3)/5)`2))
+    ELSIF divides(5, n-4) THEN
+      op2(nat2tuple((n-4)/5)`1,
+  	  nat2PVS0_limit(limit)(nat2tuple(nat2tuple((n-4)/5)`2)`1),
+	  nat2PVS0_limit(limit)(nat2tuple(nat2tuple((n-4)/5)`2)`2))
+    ELSE
+      ite(nat2PVS0_limit(limit)(nat2tuple((n-5)/5)`1),
+          nat2PVS0_limit(limit)(nat2tuple(nat2tuple((n-5)/5)`2)`1),
+	  nat2PVS0_limit(limit)(nat2tuple(nat2tuple((n-5)/5)`2)`2))
+    ENDIF
+  MEASURE n
+
+  PVS02nat_limit(limit: nat)(expr : (valid_index(limit))): RECURSIVE nat =
+    CASES expr OF
+      vr : 0,
+      cnst(v) : v*5+1,
+      rec(n,arg1): (n + PVS02nat_limit(limit)(arg1)*(limit+1))*5+2,
+      op1(n,arg1): tuple2nat(n,PVS02nat_limit(limit)(arg1))*5+3,
+      op2(n,arg1,arg2): tuple2nat(n,tuple2nat(PVS02nat_limit(limit)(arg1),PVS02nat_limit(limit)(arg2)))*5+4,
+      ite(arg1,arg2,arg3):
+        tuple2nat(PVS02nat_limit(limit)(arg1),tuple2nat(PVS02nat_limit(limit)(arg2),PVS02nat_limit(limit)(arg3)))*5+5
+    ENDCASES
+  MEASURE expr BY <<
+
+
+   limited(l : (cons?[PVS0Expr[nat]])) : bool = FORALL(i : below[length(l)]) : valid_index_rec(nth(l,i),length(l))
+
+  listPVS02nat_limit(l : (limited)) : nat =
+  nat_list_enum_inv(map(PVS02nat_limit(length(l)-1))(l)) -1
+
+  
+
+  nat2listPVS0_limit(n : nat): (limited) =
+  map(nat2PVS0_limit(length(nat_list_enum(n+1))-1))(nat_list_enum(n+1))
+
+  p_recursive2nat2(pvs0 : partial_recursive): nat = listPVS02nat_limit(pvs0`4)
+
+  nat2p_recursive2(n : nat) : partial_recursive = (lop1,lop2,false_val,nat2listPVS0_limit(n))
+
+  nat2PVS0_PVS02nat_limit : LEMMA
+  FORALL(limit : nat): FORALL(pvsexpr : (valid_index(limit))) :
+  nat2PVS0_limit(limit)(PVS02nat_limit(limit)(pvsexpr)) = pvsexpr
+
+  PVS02nat_nat2PVS0_limit : LEMMA
+  FORALL(limit : nat): FORALL(n : nat) :
+  PVS02nat_limit(limit)(nat2PVS0_limit(limit)(n)) = n
+
+  list_nat2PVS0_PVS0nat_limit : LEMMA
+  FORALL(l : (limited)) : 
+  nat2listPVS0_limit(listPVS02nat_limit(l)) = l
+
+  list_PVS02nat_nat2PVS0_limit : LEMMA
+  FORALL(n : nat):
+  listPVS02nat_limit(nat2listPVS0_limit(n)) = n
+
+  p_recursive2nat2_opposite : LEMMA
+  FORALL(n : nat) :
+  p_recursive2nat2(nat2p_recursive2(n)) = n
+
+  nat2p_recursive2_opposite : LEMMA
+  FORALL(pvs0 : partial_recursive):
+  nat2p_recursive2(p_recursive2nat2(pvs0)) = pvs0
+  
+  
+END pvs0_computable

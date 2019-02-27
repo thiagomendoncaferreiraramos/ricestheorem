@@ -1,0 +1,41 @@
+fixedpoint [false_val:nat,lop1:list[[nat->nat]],lop2:list[[[nat,nat]->nat]]]
+		: THEORY
+
+  BEGIN
+
+   ASSUMING
+      IMPORTING pvs0_to_nat
+
+      tuple2nat_assump : ASSUMPTION
+	EXISTS( i : below[length(lop2)]) : nth(lop2,i) = tuple2nat
+
+      
+
+      IMPORTING pvs0_computable[false_val,lop1,lop2]
+
+      diagonal_function : ASSUMPTION
+      FORALL(j: below[length(lop2)], u :list[PVS0Expr[nat]]): EXISTS(diagonal : computable) : FORALL(i : nat):
+      LET m = (lop1,lop2,false_val,cons(rec(1,op2(j,rec(1,op2(j,cnst(i),cnst(i))),vr)),map(offset_rec(1))(u))) IN
+      partial_recursive?(m) AND
+      semantic_rel(diagonal)(i, p_recursive2nat2(m))
+
+      universal_PVS0_program : ASSUMPTION
+      EXISTS(universal : computable) : FORALL(m,n,o1 : nat) :
+      semantic_rel(universal)(tuple2nat(m,n),o1) <=> semantic_rel(nat2p_recursive2(m))(n,o1)
+   ENDASSUMING
+
+   IMPORTING more_lists
+
+   part2part(c : computable)(p : partial_recursive) : partial_recursive = 
+   nat2p_recursive2(choose({o1 : nat | semantic_rel(c)(p_recursive2nat2(p),o1)}))
+
+
+   fixed_point: THEOREM
+   FORALL(f : computable) :
+   EXISTS(p : partial_recursive) :
+   FORALL(i,o1,o2: nat): (semantic_rel(p)(i,o1) AND
+   		   	 semantic_rel(part2part(f)(p))(i,o2)) => o1=o2
+
+  
+
+  END fixedpoint

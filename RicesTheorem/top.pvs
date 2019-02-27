@@ -1,0 +1,8 @@
+top  % [ parameters ]
+		: THEORY
+
+  BEGIN
+
+  IMPORTING pvs0_halting, fixedpoint
+
+  END top
