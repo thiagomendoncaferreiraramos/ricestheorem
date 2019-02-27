@@ -1,0 +1,49 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This theory proves that there is no          %
+% PVS0 program to decides a semantic predicate %
+% except the predicate is empty or full.       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+pvso_Rices_Theorem  [false_val:nat,lop1:list[[nat->nat]],lop2:list[[[nat,nat]->nat]]] : THEORY
+	
+
+  BEGIN
+
+  ASSUMING
+	IMPORTING pvs0_to_nat,
+            structures@more_list_props
+	    
+	tuple2nat_assump : ASSUMPTION
+	EXISTS( i : below[length(lop2)]) : nth(lop2,i) = tuple2nat
+
+	IMPORTING pvs0_computable[false_val,lop1,lop2]
+
+
+	selfprint_assump : ASSUMPTION
+	FORALL( pvs0 : PVS0):
+	EXISTS(print : partial_recursive ):
+	LET self = (lop1,lop2,false_val, append(pvs0`4,map(offset_rec(length(pvs0`4)))(print`4))) IN
+	partial_recursive?(self) AND
+	FORALL(i : nat):
+	semantic_rel_expr(self)(offset_rec(length(pvs0`4))(nth(print`4,0)),i,p_recursive2nat(self))
+  ENDASSUMING
+
+  true_val : {x : nat | x /= false_val}
+
+  is_semantic_predicate?(P : pred[PVS0]) : bool =
+   FORALL(a,b : PVS0): ( FORALL( i,o1,o2: nat) :
+   (semantic_rel(a)(i,o1) AND semantic_rel(b)(i,o2)) => o1 = o2)
+   =>  (P(a) <=> P(b))
+
+  IMPORTING map_append
+
+  % The Rice`s Theorem says that it is impossible deciding a semantic property except this is
+  % the full or the empty set.
+  pvs0_Rice_theorem: THEOREM
+   FORALL (P : pred[partial_recursive] | is_semantic_predicate?(P)) :
+   (EXISTS (decider: computable): FORALL (pvs0: partial_recursive):
+   (NOT semantic_rel(decider)(p_recursive2nat(pvs0), false_val)) IFF P(pvs0)) IFF
+   (P = emptyset OR P = fullset)
+  
+
+  END pvso_Rices_Theorem

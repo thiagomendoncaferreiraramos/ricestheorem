@@ -50,20 +50,6 @@ BEGIN
       (NOT semantic_rel(oracle)(tuple2nat(p_recursive2nat(pvs0),n), false_val)) IFF determined?(pvs0)(n)
 
 
-  is_semantic_predicate?(P : pred[PVS0]) : bool =
-   FORALL(a,b : PVS0): ( FORALL( i,o1,o2: nat) :
-   (semantic_rel(a)(i,o1) AND semantic_rel(b)(i,o2)) => o1 = o2)
-   =>  (P(a) <=> P(b))
-
-  IMPORTING map_append
-
-  % The Rice`s Theorem says that it is impossible deciding a semantic property except this is
-  % the full or the empty set.
-  pvs0_Rice_theorem: THEOREM
-   FORALL (P : pred[partial_recursive] | is_semantic_predicate?(P)) :
-   (EXISTS (decider: computable): FORALL (pvs0: partial_recursive):
-   (NOT semantic_rel(decider)(p_recursive2nat(pvs0), false_val)) IFF P(pvs0)) IFF
-   (P = emptyset OR P = fullset)
 
  
 END pvs0_halting
