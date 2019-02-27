@@ -5,8 +5,9 @@ undecidability of the Halting Problem and Fixed Point Theorem for this model. PV
 essentially a functional language model which includes its operational semantics as part
 of the specification. 
 
-Instructions:  to follow this formalization, it is necessary to instal PVS version
-6.n including the NASA PVS libraries.
+Instructions:  to follow this formalization, it is necessary to install PVS version
+6.0 (avaliable in http://pvs.csl.sri.com/download.shtml) including the NASA PVS libraries
+(avaliable in https://github.com/nasa/pvslib).
 
 The description of the files in the library is given below. 
 
