@@ -1,12 +1,12 @@
-(pvso_Rices_Theorem
+(pvs0_Rices_Theorem
  (IMP_pvs0_computable_TCC1 0
-  (IMP_pvs0_computable_TCC1-2 nil 3760298546
+  (IMP_pvs0_computable_TCC1-2 nil 3760301376
    ("" (lemma "tuple2nat_assump") (("" (propax) nil nil)) nil)
-   ((tuple2nat_assump formula-decl nil pvso_Rices_Theorem nil)) nil)
-  (IMP_pvs0_computable_TCC1-1 nil 3760298413
+   ((tuple2nat_assump formula-decl nil pvs0_Rices_Theorem nil)) nil)
+  (IMP_pvs0_computable_TCC1-1 nil 3760300923
    ("" (assuming-tcc) nil nil) nil nil))
  (selfprint_assump_TCC1 0
-  (selfprint_assump_TCC1-2 nil 3760298768 ("" (grind) nil nil)
+  (selfprint_assump_TCC1-2 nil 3760301421 ("" (grind) nil nil)
    ((subterm adt-def-decl "boolean" PVS0Expr_adt nil)
     (valid_index_rec const-decl "bool" pvs0_lang nil)
     (length def-decl "nat" list_props nil)
@@ -19,10 +19,10 @@
     (partial_recursive type-eq-decl nil pvs0_computable nil)
     (partial_recursive? const-decl "bool" pvs0_computable nil)
     (lop2 formal-const-decl "list[[[nat, nat] -> nat]]"
-     pvso_Rices_Theorem nil)
-    (lop1 formal-const-decl "list[[nat -> nat]]" pvso_Rices_Theorem
+     pvs0_Rices_Theorem nil)
+    (lop1 formal-const-decl "list[[nat -> nat]]" pvs0_Rices_Theorem
      nil)
-    (false_val formal-const-decl "nat" pvso_Rices_Theorem nil)
+    (false_val formal-const-decl "nat" pvs0_Rices_Theorem nil)
     (PVS0 type-eq-decl nil pvs0_expr nil)
     (lPVS0Expr type-eq-decl nil pvs0_expr nil)
     (cons? adt-recognizer-decl "[list -> boolean]" list_adt nil)
@@ -50,17 +50,17 @@
     (bool nonempty-type-eq-decl nil booleans nil)
     (boolean nonempty-type-decl nil booleans nil))
    nil)
-  (selfprint_assump_TCC1-1 nil 3760298413 ("" (subtype-tcc) nil nil)
+  (selfprint_assump_TCC1-1 nil 3760300923 ("" (subtype-tcc) nil nil)
    nil nil))
  (selfprint_assump_TCC2 0
-  (selfprint_assump_TCC2-2 nil 3760298901 ("" (grind) nil nil)
+  (selfprint_assump_TCC2-2 nil 3760301476 ("" (grind) nil nil)
    ((partial_recursive? const-decl "bool" pvs0_computable nil)
-    (false_val formal-const-decl "nat" pvso_Rices_Theorem nil)
+    (false_val formal-const-decl "nat" pvs0_Rices_Theorem nil)
     (list type-decl nil list_adt nil)
-    (lop1 formal-const-decl "list[[nat -> nat]]" pvso_Rices_Theorem
+    (lop1 formal-const-decl "list[[nat -> nat]]" pvs0_Rices_Theorem
      nil)
     (lop2 formal-const-decl "list[[[nat, nat] -> nat]]"
-     pvso_Rices_Theorem nil)
+     pvs0_Rices_Theorem nil)
     (valid_index_rec const-decl "bool" pvs0_lang nil)
     (number nonempty-type-decl nil numbers nil)
     (boolean nonempty-type-decl nil booleans nil)
@@ -101,10 +101,10 @@
     (EvalOp1 type-eq-decl nil pvs0_expr nil)
     (NOT const-decl "[bool -> bool]" booleans nil))
    nil)
-  (selfprint_assump_TCC2-1 nil 3760298413 ("" (subtype-tcc) nil nil)
+  (selfprint_assump_TCC2-1 nil 3760300923 ("" (subtype-tcc) nil nil)
    nil nil))
  (true_val_TCC1 0
-  (true_val_TCC1-2 nil 3760299000 ("" (inst 1 "false_val+1") nil nil)
+  (true_val_TCC1-2 nil 3760301584 ("" (inst 1 "false_val+1") nil nil)
    ((nnint_plus_posint_is_posint application-judgement "posint"
      integers nil)
     (number nonempty-type-decl nil numbers nil)
@@ -122,15 +122,15 @@
     (>= const-decl "bool" reals nil)
     (nat nonempty-type-eq-decl nil naturalnumbers nil)
     (/= const-decl "boolean" notequal nil)
-    (false_val formal-const-decl "nat" pvso_Rices_Theorem nil)
+    (false_val formal-const-decl "nat" pvs0_Rices_Theorem nil)
     (numfield nonempty-type-eq-decl nil number_fields nil)
     (+ const-decl "[numfield, numfield -> numfield]" number_fields
        nil))
    nil)
-  (true_val_TCC1-1 nil 3760298413 ("" (existence-tcc) nil nil) nil
+  (true_val_TCC1-1 nil 3760300923 ("" (existence-tcc) nil nil) nil
    nil))
  (pvs0_Rice_theorem 0
-  (pvs0_Rice_theorem-1 nil 3760299231
+  (pvs0_Rice_theorem-2 nil 3760301241
    ("" (skeep)
     (("" (prop)
       (("1" (expand "emptyset")
@@ -2927,7 +2927,7 @@
         nil))
       nil))
     nil)
-   ((true_val const-decl "{x: nat | x /= false_val}" pvso_Rices_Theorem
+   ((true_val const-decl "{x: nat | x /= false_val}" pvs0_Rices_Theorem
      nil)
     (/= const-decl "boolean" notequal nil)
     (cnst adt-constructor-decl "[T -> (cnst?)]" PVS0Expr_adt nil)
@@ -2948,19 +2948,19 @@
     (terminating? const-decl "bool" pvs0_lang nil)
     (subterm adt-def-decl "boolean" PVS0Expr_adt nil)
     (terminates_expr const-decl "bool" pvs0_expr nil)
-    (tuple2nat_assump formula-decl nil pvso_Rices_Theorem nil)
+    (tuple2nat_assump formula-decl nil pvs0_Rices_Theorem nil)
     (emptyset const-decl "set" sets nil)
-    (is_semantic_predicate? const-decl "bool" pvso_Rices_Theorem nil)
+    (is_semantic_predicate? const-decl "bool" pvs0_Rices_Theorem nil)
     (FALSE const-decl "bool" booleans nil)
     (extend const-decl "R" extend nil)
     (pred type-eq-decl nil defined_types nil)
     (partial_recursive type-eq-decl nil pvs0_computable nil)
     (partial_recursive? const-decl "bool" pvs0_computable nil)
     (lop2 formal-const-decl "list[[[nat, nat] -> nat]]"
-     pvso_Rices_Theorem nil)
-    (lop1 formal-const-decl "list[[nat -> nat]]" pvso_Rices_Theorem
+     pvs0_Rices_Theorem nil)
+    (lop1 formal-const-decl "list[[nat -> nat]]" pvs0_Rices_Theorem
      nil)
-    (false_val formal-const-decl "nat" pvso_Rices_Theorem nil)
+    (false_val formal-const-decl "nat" pvs0_Rices_Theorem nil)
     (PVS0 type-eq-decl nil pvs0_expr nil)
     (lPVS0Expr type-eq-decl nil pvs0_expr nil)
     (cons? adt-recognizer-decl "[list -> boolean]" list_adt nil)
@@ -2986,12 +2986,12 @@
      nil)
     (boolean nonempty-type-decl nil booleans nil)
     (number nonempty-type-decl nil numbers nil)
-    (selfprint_assump formula-decl nil pvso_Rices_Theorem nil)
+    (selfprint_assump formula-decl nil pvs0_Rices_Theorem nil)
     (opp skolem-const-decl
      "[list[[nat -> nat]], list[[[nat, nat] -> nat]], nat, (cons?[PVS0Expr[nat]])]"
-     pvso_Rices_Theorem nil)
+     pvs0_Rices_Theorem nil)
     (print skolem-const-decl "partial_recursive[false_val, lop1, lop2]"
-           pvso_Rices_Theorem nil)
+           pvs0_Rices_Theorem nil)
     (nth def-decl "T" list_props nil)
     (null adt-constructor-decl "(null?)" list_adt nil)
     (null? adt-recognizer-decl "[list -> boolean]" list_adt nil)
@@ -3007,11 +3007,11 @@
     (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
     (int_minus_int_is_int application-judgement "int" integers nil)
     (decider skolem-const-decl "computable[false_val, lop1, lop2]"
-     pvso_Rices_Theorem nil)
+     pvs0_Rices_Theorem nil)
     (x!2 skolem-const-decl "partial_recursive[false_val, lop1, lop2]"
-     pvso_Rices_Theorem nil)
+     pvs0_Rices_Theorem nil)
     (x!1 skolem-const-decl "partial_recursive[false_val, lop1, lop2]"
-     pvso_Rices_Theorem nil)
+     pvs0_Rices_Theorem nil)
     (below type-eq-decl nil nat_types nil)
     (< const-decl "bool" reals nil)
     (int_plus_int_is_int application-judgement "int" integers nil)
@@ -3058,5 +3058,7 @@
     (offset_rec def-decl "PVS0Expr" pvs0_lang nil)
     (TRUE const-decl "bool" booleans nil)
     (fullset const-decl "set" sets nil))
-   nil)))
+   nil)
+  (pvs0_Rice_theorem-1 nil 3760300937 ("" (postpone) nil nil) nil
+   shostak)))
 

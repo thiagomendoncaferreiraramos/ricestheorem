@@ -17,13 +17,7 @@ BEGIN
 	IMPORTING pvs0_computable[false_val,lop1,lop2]
 
 
-	selfprint_assump : ASSUMPTION
-	FORALL( pvs0 : PVS0):
-	EXISTS(print : partial_recursive ):
-	LET self = (lop1,lop2,false_val, append(pvs0`4,map(offset_rec(length(pvs0`4)))(print`4))) IN
-	partial_recursive?(self) AND
-	FORALL(i : nat):
-	semantic_rel_expr(self)(offset_rec(length(pvs0`4))(nth(print`4,0)),i,p_recursive2nat(self))
+	
   ENDASSUMING
   
 

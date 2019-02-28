@@ -4,7 +4,7 @@
 % except the predicate is empty or full.       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-pvso_Rices_Theorem  [false_val:nat,lop1:list[[nat->nat]],lop2:list[[[nat,nat]->nat]]] : THEORY
+pvs0_Rices_Theorem  [false_val:nat,lop1:list[[nat->nat]],lop2:list[[[nat,nat]->nat]]] : THEORY
 	
 
   BEGIN
@@ -46,4 +46,4 @@ pvso_Rices_Theorem  [false_val:nat,lop1:list[[nat->nat]],lop2:list[[[nat,nat]->n
    (P = emptyset OR P = fullset)
   
 
-  END pvso_Rices_Theorem
+  END pvs0_Rices_Theorem

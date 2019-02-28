@@ -3,6 +3,6 @@ top  % [ parameters ]
 
   BEGIN
 
-  IMPORTING pvs0_halting, fixedpoint
+  IMPORTING pvs0_halting, fixedpoint, pvs0_Rices_Theorem
 
   END top
