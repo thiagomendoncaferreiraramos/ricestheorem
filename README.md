@@ -11,11 +11,13 @@ Instructions:  to follow this formalization, it is necessary to install PVS vers
 
 The description of the files in the library is given below. 
 
-The main file top.pvs imports the principal files of the theory that are  
+The main file top.pvs imports the principal files of the theory that are  pvs0_Rices_Theorem
 pvs0_halting.pvs and fixedpoint.pvs.
 
-pvs0_halting.pvs contains the formalization of the Rice's Theorem (called 
-pvs0_Rice_theorem), the formalization of the Undecidability of the Halting Problem 
+pvs0_Rices_Theorem contains the formalization of the Rice's Theorem (called 
+pvs0_Rice_theorem).
+
+pvs0_halting.pvs contains the formalization of the Undecidability of the Halting Problem 
 (called pvs0_halting_problem_undecidability) and of an specific case where the 
 Decidability of the Halting Problem holds (called pvs0_halting_problem_decidability).
 
