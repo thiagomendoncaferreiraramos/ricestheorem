@@ -20,7 +20,7 @@ fixedpoint [false_val:nat,lop1:list[[nat->nat]],lop2:list[[[nat,nat]->nat]]]
       semantic_rel(diagonal)(i, p_recursive2nat2(m))
 
       universal_PVS0_program : ASSUMPTION
-      EXISTS(universal : computable) : FORALL(m,n,o1 : nat) :
+      EXISTS(universal : partial_recursive) : FORALL(m,n,o1 : nat) :
       semantic_rel(universal)(tuple2nat(m,n),o1) <=> semantic_rel(nat2p_recursive2(m))(n,o1)
    ENDASSUMING
 

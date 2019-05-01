@@ -30,9 +30,9 @@ pvs0_Rices_Theorem  [false_val:nat,lop1:list[[nat->nat]],lop2:list[[[nat,nat]->n
 
   true_val : {x : nat | x /= false_val}
 
-  is_semantic_predicate?(P : pred[PVS0]) : bool =
-   FORALL(a,b : PVS0): ( FORALL( i,o1,o2: nat) :
-   (semantic_rel(a)(i,o1) AND semantic_rel(b)(i,o2)) => o1 = o2)
+  is_semantic_predicate?(P : pred[partial_recursive]) : bool =
+   FORALL(a,b : partial_recursive): ( FORALL( i,o1: nat) :
+   (semantic_rel(a)(i,o1) <=> semantic_rel(b)(i,o1)))
    =>  (P(a) <=> P(b))
 
   IMPORTING map_append
@@ -44,6 +44,35 @@ pvs0_Rices_Theorem  [false_val:nat,lop1:list[[nat->nat]],lop2:list[[[nat,nat]->n
    (EXISTS (decider: computable): FORALL (pvs0: partial_recursive):
    (NOT semantic_rel(decider)(p_recursive2nat(pvs0), false_val)) IFF P(pvs0)) IFF
    (P = emptyset OR P = fullset)
-  
 
+   IMPORTING pvs0_lang[nat]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Applications of Rice's Theorem
+
+  % Undecidability of the Halting Problem as corollary of Rice's Theorem
+  pvs0_halting_problem_undecidability_general: COROLLARY
+    NOT EXISTS (oracle:computable): FORALL (pvs0:partial_recursive): 
+      (NOT semantic_rel(oracle)(p_recursive2nat(pvs0), false_val)) IFF terminating?(pvs0)
+      
+ % Undecidability of the PVS0 program equivalence.
+  pvs0_program_equivalence_undecidability : COROLLARY  	
+    (NOT EXISTS (decider : computable): FORALL (pvs0, pvs1 : partial_recursive):
+        (NOT semantic_rel(decider)(tuple2nat(p_recursive2nat(pvs0),p_recursive2nat(pvs1)),false_val)) IFF
+	(FORALL(i , o1 : nat) : semantic_rel(pvs0)(i,o1) <=> semantic_rel(pvs1)(i,o1)))
+
+% Undecidability of existence of fixed points for partial_recursive programs 
+   pvs0_fixed_point_existence_undecidability : COROLLARY
+     NOT EXISTS (decider : computable): FORALL (pvs0 : partial_recursive):
+          (NOT semantic_rel(decider)(p_recursive2nat(pvs0), false_val)) IFF
+	  (EXISTS (p : nat) : semantic_rel(pvs0)(p,p))
+
+
+% Undecidability of self replication
+   pvs0_self_replication_undecidability : COROLLARY
+     NOT EXISTS (decider : computable): FORALL (pvs0 : partial_recursive):
+          (NOT semantic_rel(decider)(p_recursive2nat(pvs0), false_val)) IFF
+	  (EXISTS(p : partial_recursive):
+	  FORALL(i :nat) : semantic_rel(p)(i,p_recursive2nat(p)) AND semantic_rel(pvs0)(i,p_recursive2nat(p)) )
   END pvs0_Rices_Theorem
